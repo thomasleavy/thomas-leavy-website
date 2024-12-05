@@ -1,16 +1,17 @@
-/* Portfolio Section */
+/* Portfolio section */
 .portfolio-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em;
+  padding: 2em 1em;
   padding-bottom: 4em;
   text-align: center;
   width: 100%;
   box-sizing: border-box;
+  background-color: #1a1a1a;
 }
 
-/* Portfolio Title */
+/* Portfolio title */
 .portfolio-title {
   font-size: 3.4em;
   font-weight: bold;
@@ -21,10 +22,10 @@
 .portfolio-description {
   font-size: 1.2em;
   margin-bottom: 1.5em;
-  color: white;
+  color: #ffffff;
 }
 
-/* Portfolio Grid */
+/*Portfolio grid */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -34,7 +35,7 @@
   padding: 1em;
 }
 
-/* Portfolio Item */
+/* Portfolio items */
 .portfolio-item {
   position: relative;
   background-color: #f5f5f5;
@@ -43,30 +44,27 @@
   overflow: hidden;
   cursor: pointer;
   min-height: 200px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Lift Effect on Hover */
+/* Effect when hovered on */
 .portfolio-item:hover {
   transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Project Title Styling */
+/* Title styling */
 .project-title {
   font-size: 1.5em;
   color: #333;
   position: absolute;
-  z-index: 1;
-  opacity: 1;
+  z-index: 2; 
   transition: opacity 0.3s ease;
-}
-
-/* Hide the title on hover */
-.portfolio-item:hover .project-title {
-  opacity: 0;
+  pointer-events: none; 
 }
 
 /* Hover Effect Content */
@@ -80,32 +78,57 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-  color: #fff;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
   opacity: 0;
   transition: opacity 0.3s ease;
+  z-index: 1; 
+  pointer-events: none; 
 }
 
-/* Show hover content on item hover */
+/* Show hover stuff when hovered */
 .portfolio-item:hover .portfolio-hover {
   opacity: 1;
+  pointer-events: auto;
 }
 
+/* Hide title on hover */
+.portfolio-item:hover .project-title {
+  opacity: 0;
+}
+
+/* Portfolio Hover Text */
 .portfolio-hover p {
   margin: 0.5em 0;
   font-size: 1em;
   text-align: center;
+  max-width: 90%;
+  line-height: 1.4;
 }
 
+/* Portfolio Hover Link */
 .portfolio-hover a {
   color: #ffdd57;
   font-weight: bold;
   text-decoration: none;
   margin-top: 0.5em;
+  font-size: 1em;
   transition: color 0.3s ease;
+  z-index: 3;
 }
 
 .portfolio-hover a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
+/* Enhancements for Mobile */
+@media (hover: none) {
+  .portfolio-hover {
+    opacity: 1; 
+    pointer-events: auto; 
+  }
+
+  .portfolio-item:hover {
+    transform: none; 
+  }
+}
