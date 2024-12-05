@@ -3,36 +3,7 @@ import './Navbar.css';
 
 function Navbar({ scrollToSection }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [showNavbar, setShowNavbar] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-  const [ignoreScroll, setIgnoreScroll] = useState(false);
   const [currentSection, setCurrentSection] = useState('');
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (ignoreScroll) {
-        // Ignore scroll for the duration of the timeout after clicking a link
-        return;
-      }
-
-      if (window.scrollY > lastScrollY) {
-        // Scrolling down
-        if (currentSection !== 'contact') {
-          setShowNavbar(false);
-        }
-      } else {
-        // Scrolling up
-        setShowNavbar(true);
-      }
-
-      setLastScrollY(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [lastScrollY, ignoreScroll, currentSection]);
 
   useEffect(() => {
     const sections = document.querySelectorAll('section');
@@ -61,19 +32,13 @@ function Navbar({ scrollToSection }) {
   }, []);
 
   const handleLinkClick = (sectionId) => {
-    setIgnoreScroll(true);
     setCurrentSection(sectionId);
     scrollToSection(sectionId);
     setMenuOpen(false);
-    setShowNavbar(true);
-
-    setTimeout(() => {
-      setIgnoreScroll(false);
-    }, 1000);
   };
 
   return (
-    <nav className={`navbar ${showNavbar ? '' : 'navbar-hidden'}`}>
+    <nav className="navbar">
       <div className="navbar-menu">
         {/* Hamburger menu button for mobile view */}
         <button
@@ -126,5 +91,6 @@ function Navbar({ scrollToSection }) {
 }
 
 export default Navbar;
+
 
 

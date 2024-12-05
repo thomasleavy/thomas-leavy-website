@@ -7,11 +7,7 @@
   justify-content: space-around;
   padding: 1rem;
   z-index: 1000;
-  transition: top 0.3s ease-in-out; /* Smooth transition for hiding and showing */
-}
-
-.navbar-hidden {
-  top: -100px; /* Move navbar off screen when hidden */
+  transition: top 0.3s ease-in-out; /* Smooth transition for showing */
 }
 
 .navbar-menu {
@@ -102,4 +98,3 @@
   opacity: 1;
   visibility: visible;
 }
-

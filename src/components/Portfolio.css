@@ -25,7 +25,7 @@
   color: #ffffff;
 }
 
-/*Portfolio grid */
+/* Portfolio grid */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -51,10 +51,23 @@
   justify-content: center;
 }
 
-/* Effect when hovered on */
-.portfolio-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+/* Effect when hovered on larger screens only */
+@media (min-width: 769px) {
+  .portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Show hover content on hover for larger screens */
+  .portfolio-item:hover .portfolio-hover {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Hide title on hover for larger screens */
+  .portfolio-item:hover .project-title {
+    opacity: 0;
+  }
 }
 
 /* Title styling */
@@ -80,21 +93,10 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.85);
   color: #ffffff;
-  opacity: 0;
+  opacity: 0; /* Initially hidden */
   transition: opacity 0.3s ease;
   z-index: 1; 
   pointer-events: none; 
-}
-
-/* Show hover stuff when hovered */
-.portfolio-item:hover .portfolio-hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-/* Hide title on hover */
-.portfolio-item:hover .project-title {
-  opacity: 0;
 }
 
 /* Portfolio Hover Text */
@@ -119,31 +121,23 @@
 
 .portfolio-hover a:hover {
   color: #ffffff;
-<<<<<<< HEAD
 }
 
-/* Enhancements for Mobile */
-@media (hover: none) {
+/* Enhancements for Mobile (Disable Hover Effect) */
+@media (max-width: 768px) {
   .portfolio-hover {
-    opacity: 1; 
-    pointer-events: auto; 
+    opacity: 1; /* Keep visible */
+    pointer-events: auto; /* Enable interaction without hover */
+    background-color: transparent; /* Remove dark overlay */
   }
 
-  .portfolio-item:hover {
-    transform: none; 
+  .project-title {
+    opacity: 1; /* Always visible */
   }
-=======
->>>>>>> 006456abb48bc012d6a9201db9407d3810162316
+
+  .portfolio-item {
+    transform: none; /* Remove hover transform effect */
+    box-shadow: none; /* Remove hover shadow effect */
+  }
 }
 
-/* Enhancements for Mobile */
-@media (hover: none) {
-  .portfolio-hover {
-    opacity: 1; 
-    pointer-events: auto; 
-  }
-
-  .portfolio-item:hover {
-    transform: none; 
-  }
-}
