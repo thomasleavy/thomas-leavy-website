@@ -72,7 +72,7 @@
     .about-section {
       align-items: flex-start; /* Align content to the start */
       text-align: center;
-      padding: 6em; 
+      padding: 5em; 
     }
   
     .profile-image {
@@ -273,7 +273,7 @@
     .about-section {
       align-items: flex-start; /* Align content to the start */
       text-align: center;
-      padding: 6em; 
+      padding: 5em; 
     }
   
     .profile-image {
@@ -444,11 +444,11 @@
   
     /* Home Section Adjustments */
     .home-name {
-      font-size: 13vw; /* Increase slightly for small screens */
+      font-size: 10vw; /* Increase slightly for small screens */
     }
   
     .home-info {
-      font-size: 6vw; /* Adjust for smaller screen */
+      font-size: 5vw; /* Adjust for smaller screen */
     }
   
     .social-icons {
@@ -471,12 +471,12 @@
     .about-section {
       align-items: flex-start; /* Align content to the start */
       text-align: center;
-      padding: 6em; 
+      padding: 3em; 
     }
   
     .profile-image {
-      width: 120px;
-      height: 120px;
+      width: 110px;
+      height: 110px;
       margin: 0 1em 1em 0;
       float: left;
       opacity: 1;
@@ -666,7 +666,7 @@
     .about-section {
       align-items: center; /* Center content for larger tablet screens */
       text-align: center;
-      padding: 4em; /* Moderate padding for balanced spacing */
+      padding: 3em; 
     }
   
     .profile-image {
@@ -865,7 +865,7 @@
     }
 
     .about-content {
-        padding-top: 8em;
+        padding-top: 5em;
         max-width: 80%;
     }
 
@@ -911,7 +911,7 @@
 
     /* Portfolio Section Adjustments */
     .portfolio-section {
-        padding: 3em; /* Add padding for a spacious look */
+        padding: 2em; /* Add padding for a spacious look */
     }
 
     .portfolio-title {
@@ -946,7 +946,7 @@
 
     /* Contact Section Adjustments */
     .contact-section {
-        padding: 3em; /* Increase padding for visual balance */
+        padding: 2em; /* Increase padding for visual balance */
     }
 
     .contact-title {
@@ -1290,7 +1290,7 @@
 
     /* Portfolio Section Adjustments */
     .portfolio-section {
-        padding: 4em; /* Add padding for a spacious look */
+        padding: 3em; /* Add padding for a spacious look */
     }
 
     .portfolio-title {
@@ -1325,7 +1325,7 @@
 
     /* Contact Section Adjustments */
     .contact-section {
-        padding: 4em; /* Increase padding for visual balance */
+        padding: 3em; /* Increase padding for visual balance */
     }
 
     .contact-title {
