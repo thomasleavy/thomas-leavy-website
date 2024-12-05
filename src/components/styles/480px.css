@@ -740,24 +740,32 @@
     }
   
     .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr); /* Two items per row for tablets */
-      gap: 1em; /* Increase gap for visual separation */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1em; 
     }
   
     .portfolio-item {
-      min-height: 160px; /* Increase height for better display */
+      min-height: 160px;
+      transform: none;
+      box-shadow: none;
+      transition: none;
     }
-  
+
     .project-title {
-      font-size: 1.5em; /* Adjust font size for better readability */
+      font-size: 1.5em;
+      opacity: 1;
+    }
+
+    .portfolio-hover {
+      display: none;
     }
   
     .portfolio-hover p {
-      font-size: 1em; /* Slightly larger for readability */
+      font-size: 1em; 
     }
   
     .portfolio-hover a {
-      font-size: 1em; /* Adjust link text size */
+      font-size: 1em; 
     }
   
     /* Contact Section Adjustments */
