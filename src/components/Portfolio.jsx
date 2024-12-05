@@ -8,6 +8,9 @@ function Portfolio() {
       <section id="portfolio" className="section portfolio-section">
         <h1 className="portfolio-title">Portfolio</h1>
         <p className="portfolio-description">Some of my work and projects.</p>
+
+         {/*Portoflio grid card*/}
+
         <div className="portfolio-grid">
           <div className="portfolio-item">
             <h1 className="project-title">Go Tutorials</h1>
