@@ -119,6 +119,21 @@
 
 .portfolio-hover a:hover {
   color: #ffffff;
+<<<<<<< HEAD
+}
+
+/* Enhancements for Mobile */
+@media (hover: none) {
+  .portfolio-hover {
+    opacity: 1; 
+    pointer-events: auto; 
+  }
+
+  .portfolio-item:hover {
+    transform: none; 
+  }
+=======
+>>>>>>> 006456abb48bc012d6a9201db9407d3810162316
 }
 
 /* Enhancements for Mobile */
@@ -132,4 +147,3 @@
     transform: none; 
   }
 }
-
