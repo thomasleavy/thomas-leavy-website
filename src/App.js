@@ -7,7 +7,7 @@ import CV from './components/CV';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import './components/styles/common.css';
-import './components/styles/480px.css';
+import './components/styles/media.css';
 
 function App() {
   // Define the scrollToSection function
