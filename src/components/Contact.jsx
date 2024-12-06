@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Contact.css';
-import arrowDown from '../assets/arrowDown.png'; // Ensure this path matches where your image is stored
+import whiteArrowDown from '../assets/whiteArrowDown.png'; // Ensure this path matches where your image is stored
 import linkedinLogo from '../assets/linkedin.png';
 import githubLogo from '../assets/github.png';
 import githubOther from '../assets/githubOther.png';
@@ -58,7 +58,7 @@ function Contact({ scrollToSection }) {
 
         {/* Scroll to Home Button */}
         <img
-          src={arrowDown}
+          src={whiteArrowDown}
           alt="Scroll up"
           className="scroll-up-image"
           onClick={() => scrollToSection('home')}

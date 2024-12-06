@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import linkedinLogo from '../assets/linkedin.png';
 import githubLogo from '../assets/github.png';
-import arrowDown from '../assets/arrowDown.png';
+import whiteArrowDown from '../assets/whiteArrowDown.png';
 import githubOther from '../assets/githubOther.png';
 import './Home.css';
 
@@ -39,7 +39,7 @@ function Home({ scrollToSection }) {
         
         {/* Scroll image */}
         <img
-          src={arrowDown}
+          src={whiteArrowDown}
           alt="Scroll down"
           className="scroll-image"
           onClick={() => scrollToSection('about')}
