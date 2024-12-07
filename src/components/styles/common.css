@@ -17,7 +17,7 @@ html, body {
               radial-gradient(circle at 70% 30%, rgba(255, 0, 255, 0.15), transparent 80%);
   background-blend-mode: overlay, lighten, normal;
   background-attachment: scroll; /* Changed from 'fixed' for better mobile compatibility */
-  background-size: cover; /* Covers the entire viewport consistently */
+  background-size: 10000vh 10000vh;
   background-repeat: no-repeat; /* Prevent repetition of gradients */
   background-position: center; /* Centers the gradients across the viewport */
   color: #fff;
@@ -53,16 +53,9 @@ h1, h2, h3, p, a {
   color: #fff; /* Ensure text stands out against the dark background */
 }
 
-/* Media Query for Landscape Mode */
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 812px) {
   body {
-    background-size: 100% 100%; /* Ensure background covers full width and height */
-  }
-}
-
-/* Debugging Overflow */
-@media (max-width: 768px) {
-  body, .section {
-    overflow-x: hidden; /* Prevent horizontal scrolling on small devices */
+    background-size: 10000vw 10000vh; /* Ensure full background coverage */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
 }
