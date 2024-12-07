@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-around;
   padding: 1rem;
-  z-index: 1000;
+  z-index: 900; /* Adjusted to ensure it does not overlap the scroller */
   transition: top 0.3s ease-in-out; /* Smooth transition for showing */
 }
 
@@ -57,7 +57,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9); /* Dark overlay with some transparency */
-  z-index: 1500;
+  z-index: 950; /* Adjusted to be above the navbar */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +88,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: 1400;
+  z-index: 940; /* Adjusted to ensure correct stacking order */
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
@@ -98,3 +98,4 @@
   opacity: 1;
   visibility: visible;
 }
+
