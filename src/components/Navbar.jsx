@@ -1,38 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 function Navbar({ scrollToSection }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentSection, setCurrentSection] = useState('');
-
-  useEffect(() => {
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setCurrentSection(entry.target.id);
-          }
-        });
-      },
-      {
-        threshold: 0.6, // 60% of the section must be visible to mark it as active
-      }
-    );
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        observer.unobserve(section);
-      });
-    };
-  }, []);
 
   const handleLinkClick = (sectionId) => {
-    setCurrentSection(sectionId);
     scrollToSection(sectionId);
     setMenuOpen(false);
   };
@@ -54,36 +26,14 @@ function Navbar({ scrollToSection }) {
         ></div>
         {/* Navigation links */}
         <div className={`navbar-links ${menuOpen ? 'show fullscreen-menu' : ''}`}>
-          <button
-            className={currentSection === 'home' ? 'active-link' : ''}
-            onClick={() => handleLinkClick('home')}
-          >
-            Home
-          </button>
-          <button
-            className={currentSection === 'about' ? 'active-link' : ''}
-            onClick={() => handleLinkClick('about')}
-          >
-            About
-          </button>
-          <button
-            className={currentSection === 'cv' ? 'active-link' : ''}
-            onClick={() => handleLinkClick('cv')}
-          >
-            CV
-          </button>
-          <button
-            className={currentSection === 'portfolio' ? 'active-link' : ''}
-            onClick={() => handleLinkClick('portfolio')}
-          >
-            Portfolio
-          </button>
-          <button
-            className={currentSection === 'contact' ? 'active-link' : ''}
-            onClick={() => handleLinkClick('contact')}
-          >
-            Contact
-          </button>
+          {['home', 'about', 'cv', 'portfolio', 'contact'].map((section) => (
+            <button
+              key={section}
+              onClick={() => handleLinkClick(section)}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </button>
+          ))}
         </div>
       </div>
     </nav>
@@ -91,6 +41,4 @@ function Navbar({ scrollToSection }) {
 }
 
 export default Navbar;
-
-
 

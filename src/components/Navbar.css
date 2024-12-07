@@ -1,12 +1,12 @@
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 98.5%;
   background-color: #000000;
   display: flex;
   justify-content: space-around;
   padding: 1rem;
-  z-index: 900; /* Adjusted to ensure it does not overlap the scroller */
+  z-index: 10;
   transition: top 0.3s ease-in-out; /* Smooth transition for showing */
 }
 
@@ -30,13 +30,7 @@
 }
 
 .navbar-links button:hover {
-  color: #027e80;
-}
-
-/* Active Link Styling */
-.active-link {
-  color: #027e80; /* Change color to indicate active section */
-  font-weight: bold; /* Make the active link bold */
+  color: #027e80; /* Retain hover effect for user feedback */
 }
 
 /* Hamburger Button */
@@ -57,7 +51,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9); /* Dark overlay with some transparency */
-  z-index: 950; /* Adjusted to be above the navbar */
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,7 +82,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  z-index: 940; /* Adjusted to ensure correct stacking order */
+  z-index: 90;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
@@ -98,4 +92,3 @@
   opacity: 1;
   visibility: visible;
 }
-
