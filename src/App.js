@@ -10,7 +10,7 @@ import './components/styles/common.css';
 import './components/styles/media.css';
 
 function App() {
-  // Define the scrollToSection function
+  // Define scrollToSection function
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -23,7 +23,7 @@ function App() {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
-    // Set fadeIn to true after the component mounts, triggering the animation
+    // Set fadeIn to true, triggering the animation
     setFadeIn(true);
   }, []);
 

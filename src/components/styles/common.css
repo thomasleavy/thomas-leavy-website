@@ -11,22 +11,22 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; /*stop horizontal scroll*/
   background: linear-gradient(145deg, #000000, #1a1a1a), 
               radial-gradient(circle at 30% 30%, rgba(0, 255, 255, 0.1), transparent 60%),
               radial-gradient(circle at 70% 30%, rgba(255, 0, 255, 0.15), transparent 80%);
   background-blend-mode: overlay, lighten, normal;
-  background-attachment: fixed; /* Ensures consistent background positioning */
-  background-size: cover; /* Adjusts to fully cover viewport */
-  background-repeat: no-repeat; /* Prevent repetition of gradients */
-  background-position: center; /* Centers the gradients across the viewport */
+  background-attachment: fixed;
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
   color: #fff;
   font-family: 'Raleway', 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
 
-/* Section Styling */
+/* Section styles */
 .section {
   padding: 6.25em 1.25em;
   display: flex;
@@ -34,13 +34,13 @@ html, body {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  background: transparent; /* Ensure the section is transparent */
-  min-height: 100vh; /* Full-height sections */
+  background: transparent; 
+  min-height: 100vh; 
   width: 100%;
   box-sizing: border-box;
 }
 
-/* Neon Element Styling */
+/* Neon styling */
 #neonElement {
   background: linear-gradient(90deg, #00ffff, #ff00ff);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -50,20 +50,20 @@ html, body {
 
 /* Text Colors */
 h1, h2, h3, p, a {
-  color: #fff; /* Ensure text stands out against the dark background */
+  color: #fff;
 }
 
-/* Landscape Mode Adjustments for Small Devices */
+/*Landscape for Small Devices (shold it be in media file???) (This SHOULD remove whitespace around border when in landscape mode - it doesn't currently */
 @media (orientation: landscape) and (max-width: 812px) {
   html, body {
-    width: 100vw; /* Use viewport width to eliminate potential whitespace */
-    height: 100vh; /* Use viewport height */
+    width: 100vw; 
+    height: 100vh; 
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; /* Stop horizontal scrolling */
   }
 
   body {
-    background-size: 100vw 100vh; /* Force background to fill the screen */
+    background-size: 100vw 100vh;
   }
 }

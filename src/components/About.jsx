@@ -19,7 +19,7 @@ function About() {
             });
           },
           {
-            threshold: 0.1, // Trigger animation when 10% of the section is visible
+            threshold: 0.3, // Trigger animation when most of the section is visible
           }
         );
       

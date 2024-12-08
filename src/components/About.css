@@ -4,7 +4,7 @@
   padding: 2em;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center-align the content */
+  align-items: center; 
   overflow: hidden;
   text-align: center;
 }
@@ -13,32 +13,32 @@
   margin-top: 2em;
   width: 300px;
   height: 300px;
-  border-radius: 50%; /* Circular appearance */
+  border-radius: 50%; 
   object-fit: cover;
-  position: absolute; /* Position the image independently */
-  left: 10%; /* Move it to the left of the content */
-  transform: translateX(-100%); /* Start off-screen to the left */
-  opacity: 0; /* Initially hidden */
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth transition */
+  position: absolute; 
+  left: 10%; 
+  transform: translateX(-100%);
+  opacity: 0; 
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
 }
 
 .profile-image.visible {
-  transform: translateX(0); /* Slide to normal position */
-  opacity: 1; /* Fade in */
+  transform: translateX(0); 
+  opacity: 1; 
 }
 
 /* About Content Container */
 .about-content {
-  max-width: 600px; /* Control width for readability */
+  max-width: 600px; 
   margin: 0 auto;
-  transform: translateX(100%); /* Start off-screen to the right */
-  opacity: 0; /* Initially hidden */
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth transition */
+  transform: translateX(100%); 
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out; 
 }
 
 .about-content.visible {
-  transform: translateX(0); /* Slide to normal position */
-  opacity: 1; /* Fade in */
+  transform: translateX(0);
+  opacity: 1;
 }
 
 /* About Title Styling */
@@ -57,14 +57,14 @@
   color: white;
   margin-top: 0;
   padding-bottom: 2em;
-  opacity: 0; /* Initially hidden */
-  transform: translateX(100%); /* Start off-screen to the right */
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth transition */
+  opacity: 0; /* hidden initially */
+  transform: translateX(100%); /*start off screen on the right*/
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out; 
 }
 
 .about-description.visible {
-  transform: translateX(0); /* Slide to normal position */
-  opacity: 1; /* Fade in */
+  transform: translateX(0); 
+  opacity: 1; 
 }
 
 /* Download Button Styling */
@@ -80,9 +80,9 @@
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease-out;
-  overflow: hidden; /* Clip any overflowed elements */
-  opacity: 0; /* Initially hidden */
-  transform: translateY(100%); /* Start below */
+  overflow: hidden;
+  opacity: 0; 
+  transform: translateY(100%); 
 }
 
 .download-button.visible {
@@ -92,7 +92,7 @@
 
 /* Glow Effect on Hover */
 .download-button:hover {
-  background-color: #eb4646; /* Slightly lighter background color */
+  background-color: #eb4646; 
   box-shadow: 0 0 15px 5px #e75d5d;
 }
 

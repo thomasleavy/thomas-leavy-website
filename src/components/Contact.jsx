@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Contact.css';
-import whiteArrowDown from '../assets/whiteArrowDown.png'; // Ensure this path matches where your image is stored
+import whiteArrowDown from '../assets/whiteArrowDown.png';
 import linkedinLogo from '../assets/linkedin.png';
 import githubLogo from '../assets/github.png';
 import githubOther from '../assets/githubOther.png';

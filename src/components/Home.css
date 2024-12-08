@@ -3,14 +3,14 @@
 /* Initial hidden state for content */
 .content {
   opacity: 0;
-  transform: translateX(-100%); /* Start off-screen to the left */
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out; /* Smooth slide-in transition */
+  transform: translateX(-100%); 
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out; 
 }
 
 /* Slide-in effect for content */
 .fade-in-content {
-  opacity: 1; /* Fully visible */
-  transform: translateX(0); /* Slide to normal position */
+  opacity: 1; 
+  transform: translateX(0); 
 }
 
 /* Home Section Styling */
@@ -38,9 +38,9 @@
 /* Social Icon Container */
 .social-icons {
   display: flex;
-  gap: 1.25vw; /* Space between icons */
-  margin-top: 5.25em; /* Space above the icons */
-  justify-content: center; /* Center align the icons */
+  gap: 1.25vw; 
+  margin-top: 5.25em; 
+  justify-content: center; 
 }
 
 .social-icon {
@@ -50,13 +50,13 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1); 
 }
 
 /* Scroll Image Styling */
 .scroll-image {
-  margin-top: 6em; /* Pushes the image to the bottom of the flex container */
-  margin-bottom: 1em; /* Adds space from the bottom of the section */
+  margin-top: 6em;
+  margin-bottom: 1em; 
   width: 2.5em;
   height: auto;
   cursor: pointer;
@@ -64,5 +64,5 @@
 }
 
 .scroll-image:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1);
 }

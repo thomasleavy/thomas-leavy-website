@@ -8,16 +8,16 @@
 
 /* Scroll Up Image Styling */
 .scroll-up-image {
-  margin-top: 2em; /* Adds space above the image */
+  margin-top: 2em; 
   width: 2.5em;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
-  transform: rotate(180deg); /* Rotate to point upward */
+  transform: rotate(180deg); /*get arrow to point up, NOT down*/
 }
 
 .scroll-up-image:hover {
-  transform: rotate(180deg) scale(1.1); /* Slight zoom on hover */
+  transform: rotate(180deg) scale(1.1); 
 }
 
 .contact-title {
@@ -91,9 +91,9 @@
 /* Social Icon Container */
 .social-icons {
   display: flex;
-  gap: 1.25vw; /* Space between icons */
-  margin-top: 5.25em; /* Space above the icons */
-  justify-content: center; /* Center align the icons */
+  gap: 1.25vw; 
+  margin-top: 5.25em; 
+  justify-content: center; 
 }
 
 .social-icon {
@@ -103,5 +103,5 @@
 }
 
 .social-icon:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
+  transform: scale(1.1);
 }

@@ -28,23 +28,23 @@
     .navbar {
       flex-direction: column;
       align-items: flex-start;
-      padding: 0.5rem 1rem; /* Reduce padding */
+      padding: 0.5rem 1rem; 
     }
   
     .navbar-links {
-      display: none; /* Hide links initially for mobile view */
+      display: none; 
       flex-direction: column;
-      gap: 1em; /* Add space between buttons for easy clicking */
+      gap: 1em;
       width: 100%;
       margin-top: 0.5em;
     }
   
     .navbar-links.show {
-      display: flex; /* Show links when the hamburger button is clicked */
+      display: flex;
     }
   
     .hamburger-button {
-      display: block; /* Show hamburger button for mobile */
+      display: block; 
       font-size: 2rem;
       margin-left: auto;
     }
@@ -57,32 +57,32 @@
   
     /* Home Section Adjustments */
     .home-name {
-      font-size: 15vw; /* Increase slightly for small screens */
+      font-size: 15vw; 
     }
   
     .home-info {
-      font-size: 5vw; /* Adjust for smaller screen */
+      font-size: 5vw; 
     }
   
     .social-icons {
-      gap: 2em; /* Increase gap to spread out icons */
-      margin-top: 3em; /* Decrease the space to reduce height */
+      gap: 2em; 
+      margin-top: 3em; 
     }
   
     .social-icon {
-      width:13vw; /* Increase size for touch targets */
+      width:13vw; 
       height: 13vw;
     }
   
     .scroll-image {
-      margin-top: 3em; /* Bring scroll image closer */
-      margin-bottom: 0.5em; /* Reduce space from the bottom */
-      width: 3em; /* Slightly larger for touch accessibility */
+      margin-top: 3em; 
+      margin-bottom: 0.5em; 
+      width: 3em;
     }
   
     /* About Section Adjustments */
     .about-section {
-      align-items: flex-start; /* Align content to the start */
+      align-items: flex-start; 
       text-align: center;
       padding: 5em; 
     }
@@ -93,15 +93,15 @@
       margin: 0 1em 1em 0;
       float: left;
       opacity: 1;
-      transform: none; /* Remove animations for simplicity */
+      transform: none; 
     }
   
     .about-content {
-      max-width: 100%; /* Use full width */
+      max-width: 100%;
     }
   
     .about-title {
-      font-size: 3em; /* Adjust for readability */
+      font-size: 3em;
       margin-top: 0.3em;
     }
   
@@ -113,13 +113,13 @@
   
     .download-button {
       margin-top: 1em;
-      font-size: 1em; /* Reduce button font size */
-      padding: 0.5em 1em; /* Adjust padding for smaller devices */
+      font-size: 1em; 
+      padding: 0.5em 1em; 
     }
   
     /* CV Section Adjustments */
     .cv-section {
-      padding: 1em; /* Reduce padding */
+      padding: 1em; 
     }
   
     .cv-title {
@@ -128,7 +128,7 @@
   
     .cv-description {
       font-size: 1.3em;
-      margin-bottom: .1em; /* Reduce space between title and container */
+      margin-bottom: .1em; 
     }
   
     .cv-container {
@@ -140,33 +140,33 @@
     /*Portfolio section*/
 
     .portfolio-section {
-      padding: 1em; /* Reduce padding for compact layout */
+      padding: 1em; 
   }
 
   .portfolio-title {
-      font-size: 2.8em; /* Slightly smaller for readability */
+      font-size: 2.8em; 
   }
 
   .portfolio-description {
       font-size: 1.5em;
-      margin-bottom: 1em; /* Reduce space */
+      margin-bottom: 1em; 
   }
 
   .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr); /* Single column layout for better fit */
-      gap: 0.5em; /* Reduce gap for compactness */
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 0.5em; 
   }
 
   .portfolio-item {
-      min-height: 120px; /* Reduce height for smaller screens */
-      transform: none; /* Remove any hover transform effect */
-      box-shadow: none; /* Remove hover shadow effect */
-      transition: none; /* Remove transition effect for hover */
+      min-height: 120px; 
+      transform: none; 
+      box-shadow: none; 
+      transition: none; 
   }
 
   .project-title {
-      font-size: 1.2em; /* Adjust font size for readability */
-      opacity: 1; /* Always visible */
+      font-size: 1.2em; 
+      opacity: 1; 
   }
 
   .portfolio-hover {
@@ -179,38 +179,38 @@
     }
   
     .contact-title {
-      font-size: 2.8em; /* Reduce size */
+      font-size: 2.8em; 
     }
   
     .contact-description {
-      font-size: 1.5em; /* Adjust font size */
+      font-size: 1.5em; 
     }
   
     .contact-form {
-      max-width: 100%; /* Use full width of the screen */
-      gap: 0.5em; /* Adjust gap between inputs */
+      max-width: 100%; 
+      gap: 0.5em; 
     }
   
     .contact-form input,
     .contact-form textarea {
-      padding: 0.5em; /* Reduce padding for smaller inputs */
-      font-size: 1.5em; /* Adjust font size */
+      padding: 0.5em; 
+      font-size: 1.5em; 
     }
   
     .submit-button {
         margin-top: 1em;
-      font-size: 1.9em; /* Reduce button font size */
-      padding: .5em 1em; /* Adjust padding */
+      font-size: 1.9em; 
+      padding: .5em 1em; 
     }
   
     .social-icons {
-      gap: 2em; /* Adjust space between icons */
-      margin-top: 2em; /* Decrease space above icons */
+      gap: 2em; 
+      margin-top: 2em; 
     }
   
     .scroll-up-image {
-      margin-top: 1em; /* Bring closer to the form */
-      width: 2em; /* Smaller scroll button */
+      margin-top: 1em;
+      width: 2em;
     }
   }
 
@@ -230,23 +230,23 @@
     .navbar {
       flex-direction: column;
       align-items: flex-start;
-      padding: .3rem 2rem; /* Reduce padding */
+      padding: .3rem 2rem; 
     }
   
     .navbar-links {
-      display: none; /* Hide links initially for mobile view */
+      display: none; 
       flex-direction: column;
-      gap: 1em; /* Add space between buttons for easy clicking */
+      gap: 1em; 
       width: 100%;
       margin-top: 0.5em;
     }
   
     .navbar-links.show {
-      display: flex; /* Show links when the hamburger button is clicked */
+      display: flex; 
     }
   
     .hamburger-button {
-      display: block; /* Show hamburger button for mobile */
+      display: block; 
       font-size: 2rem;
       margin-left: auto;
     }
@@ -259,32 +259,32 @@
   
     /* Home Section Adjustments */
     .home-name {
-      font-size: 12vw; /* Increase slightly for small screens */
+      font-size: 12vw; 
     }
   
     .home-info {
-      font-size: 5vw; /* Adjust for smaller screen */
+      font-size: 5vw; 
     }
   
     .social-icons {
-      gap: 2em; /* Increase gap to spread out icons */
-      margin-top: 3em; /* Decrease the space to reduce height */
+      gap: 2em; 
+      margin-top: 3em; 
     }
   
     .social-icon {
-      width:13vw; /* Increase size for touch targets */
+      width:13vw; 
       height: 13vw;
     }
   
     .scroll-image {
-      margin-top: 3em; /* Bring scroll image closer */
-      margin-bottom: 0.5em; /* Reduce space from the bottom */
-      width: 3em; /* Slightly larger for touch accessibility */
+      margin-top: 3em;
+      margin-bottom: 0.5em; 
+      width: 3em; 
     }
   
     /* About Section Adjustments */
     .about-section {
-      align-items: flex-start; /* Align content to the start */
+      align-items: flex-start; 
       text-align: center;
       padding: 5em; 
     }
@@ -295,15 +295,15 @@
       margin: 0 1em 1em 0;
       float: left;
       opacity: 1;
-      transform: none; /* Remove animations for simplicity */
+      transform: none; 
     }
   
     .about-content {
-      max-width: 100%; /* Use full width */
+      max-width: 100%; 
     }
   
     .about-title {
-      font-size: 3em; /* Adjust for readability */
+      font-size: 3em; 
       margin-top: 0.5em;
     }
   
@@ -315,13 +315,13 @@
   
     .download-button {
       margin-top: 1em;
-      font-size: 0.9em; /* Reduce button font size */
-      padding: 0.5em 1em; /* Adjust padding for smaller devices */
+      font-size: 0.9em; 
+      padding: 0.5em 1em; 
     }
   
     /* CV Section Adjustments */
     .cv-section {
-      padding: 1em; /* Reduce padding */
+      padding: 1em; 
     }
   
     .cv-title {
@@ -330,7 +330,7 @@
   
     .cv-description {
       font-size: 1.3em;
-      margin-bottom: .1em; /* Reduce space between title and container */
+      margin-bottom: .1em; 
     }
   
     .cv-container {
@@ -341,33 +341,33 @@
   
     /* Portfolio Section Adjustments */
     .portfolio-section {
-      padding: 1em; /* Reduce padding for compact layout */
+      padding: 1em; 
   }
 
   .portfolio-title {
-      font-size: 2.8em; /* Slightly smaller for readability */
+      font-size: 2.8em; 
   }
 
   .portfolio-description {
       font-size: 1.5em;
-      margin-bottom: 1em; /* Reduce space */
+      margin-bottom: 1em; 
   }
 
   .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr); /* Single column layout for better fit */
-      gap: 0.5em; /* Reduce gap for compactness */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5em;
   }
 
   .portfolio-item {
-      min-height: 120px; /* Reduce height for smaller screens */
-      transform: none; /* Remove any hover transform effect */
-      box-shadow: none; /* Remove hover shadow effect */
-      transition: none; /* Remove transition effect for hover */
+      min-height: 120px; 
+      transform: none;
+      box-shadow: none; 
+      transition: none;
   }
 
   .project-title {
-      font-size: 1.2em; /* Adjust font size for readability */
-      opacity: 1; /* Always visible */
+      font-size: 1.2em; 
+      opacity: 1;
   }
 
   .portfolio-hover {
@@ -382,37 +382,37 @@
     }
   
     .contact-title {
-      font-size: 2.8em; /* Reduce size */
+      font-size: 2.8em; 
     }
   
     .contact-description {
-      font-size: 1.5em; /* Adjust font size */
+      font-size: 1.5em; 
     }
   
     .contact-form {
-      max-width: 100%; /* Use full width of the screen */
-      gap: 0.5em; /* Adjust gap between inputs */
+      max-width: 100%; 
+      gap: 0.5em; 
     }
   
     .contact-form input,
     .contact-form textarea {
-      padding: 0.5em; /* Reduce padding for smaller inputs */
-      font-size: 1.5em; /* Adjust font size */
+      padding: 0.5em; 
+      font-size: 1.5em; 
     }
   
     .submit-button {
-      font-size: 1.9em; /* Reduce button font size */
-      padding: 0.5em 1em; /* Adjust padding */
+      font-size: 1.9em; 
+      padding: 0.5em 1em;
     }
   
     .social-icons {
-      gap: 2em; /* Adjust space between icons */
-      margin-top: 2em; /* Decrease space above icons */
+      gap: 2em; 
+      margin-top: 2em; 
     }
   
     .scroll-up-image {
-      margin-top: 1em; /* Bring closer to the form */
-      width: 2em; /* Smaller scroll button */
+      margin-top: 1em; 
+      width: 2em; 
     }
   }
 
@@ -434,19 +434,19 @@
     }
   
     .navbar-links {
-      display: none; /* Hide links initially for mobile view */
+      display: none; 
       flex-direction: column;
-      gap: 1em; /* Add space between buttons for easy clicking */
+      gap: 1em;
       width: 100%;
       margin-top: 0.5em;
     }
   
     .navbar-links.show {
-      display: flex; /* Show links when the hamburger button is clicked */
+      display: flex;
     }
   
     .hamburger-button {
-      display: block; /* Show hamburger button for mobile */
+      display: block; 
       font-size: 2rem;
       margin-left: auto;
     }
@@ -459,32 +459,32 @@
   
     /* Home Section Adjustments */
     .home-name {
-      font-size: 10vw; /* Increase slightly for small screens */
+      font-size: 10vw; 
     }
   
     .home-info {
-      font-size: 5vw; /* Adjust for smaller screen */
+      font-size: 5vw; 
     }
   
     .social-icons {
-      gap: 2em; /* Increase gap to spread out icons */
-      margin-top: 3em; /* Decrease the space to reduce height */
+      gap: 2em; 
+      margin-top: 3em; 
     }
   
     .social-icon {
-      width:13vw; /* Increase size for touch targets */
+      width:13vw; 
       height: 13vw;
     }
   
     .scroll-image {
-      margin-top: 3em; /* Bring scroll image closer */
-      margin-bottom: 0.5em; /* Reduce space from the bottom */
-      width: 3em; /* Slightly larger for touch accessibility */
+      margin-top: 3em;
+      margin-bottom: 0.5em; 
+      width: 3em; 
     }
   
     /* About Section Adjustments */
     .about-section {
-      align-items: flex-start; /* Align content to the start */
+      align-items: flex-start; 
       text-align: center;
       padding: 3em; 
     }
@@ -495,15 +495,15 @@
       margin: 0 1em 1em 0;
       float: left;
       opacity: 1;
-      transform: none; /* Remove animations for simplicity */
+      transform: none; 
     }
   
     .about-content {
-      max-width: 100%; /* Use full width */
+      max-width: 100%; 
     }
   
     .about-title {
-      font-size: 3.5em; /* Adjust for readability */
+      font-size: 3.5em; 
       margin-top: 0.5em;
     }
   
@@ -515,13 +515,13 @@
   
     .download-button {
       margin-top: 1em;
-      font-size: 1.1em; /* Reduce button font size */
-      padding: 0.5em 1em; /* Adjust padding for smaller devices */
+      font-size: 1.1em; 
+      padding: 0.5em 1em; 
     }
   
     /* CV Section Adjustments */
     .cv-section {
-      padding: 1em; /* Reduce padding */
+      padding: 1em; 
     }
   
     .cv-title {
@@ -530,7 +530,7 @@
   
     .cv-description {
       font-size: 1.6em;
-      margin-bottom: .5em; /* Reduce space between title and container */
+      margin-bottom: .5em; 
     }
   
     .cv-container {
@@ -541,33 +541,33 @@
   
     /* Portfolio Section Adjustments */
     .portfolio-section {
-      padding: 1em; /* Reduce padding for compact layout */
+      padding: 1em; 
   }
 
   .portfolio-title {
-      font-size: 2.8em; /* Slightly smaller for readability */
+      font-size: 2.8em; 
   }
 
   .portfolio-description {
       font-size: 1.5em;
-      margin-bottom: 1em; /* Reduce space */
+      margin-bottom: 1em; 
   }
 
   .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr); /* Single column layout for better fit */
-      gap: 0.5em; /* Reduce gap for compactness */
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 0.5em;
   }
 
   .portfolio-item {
-      min-height: 120px; /* Reduce height for smaller screens */
-      transform: none; /* Remove any hover transform effect */
-      box-shadow: none; /* Remove hover shadow effect */
-      transition: none; /* Remove transition effect for hover */
+      min-height: 120px; 
+      transform: none; 
+      box-shadow: none; 
+      transition: none; 
   }
 
   .project-title {
-      font-size: 1.2em; /* Adjust font size for readability */
-      opacity: 1; /* Always visible */
+      font-size: 1.2em; 
+      opacity: 1;
   }
 
   .portfolio-hover {
@@ -581,37 +581,37 @@
     }
   
     .contact-title {
-      font-size: 2.8em; /* Reduce size */
+      font-size: 2.8em; 
     }
   
     .contact-description {
-      font-size: 1.5em; /* Adjust font size */
+      font-size: 1.5em; 
     }
   
     .contact-form {
-      max-width: 100%; /* Use full width of the screen */
-      gap: 0.5em; /* Adjust gap between inputs */
+      max-width: 100%; 
+      gap: 0.5em; 
     }
   
     .contact-form input,
     .contact-form textarea {
-      padding: 0.5em; /* Reduce padding for smaller inputs */
-      font-size: 1.5em; /* Adjust font size */
+      padding: 0.5em; 
+      font-size: 1.5em; 
     }
   
     .submit-button {
-      font-size: 1.9em; /* Reduce button font size */
-      padding: 0.5em 1em; /* Adjust padding */
+      font-size: 1.9em; 
+      padding: 0.5em 1em; 
     }
   
     .social-icons {
-      gap: 2em; /* Adjust space between icons */
-      margin-top: 2em; /* Decrease space above icons */
+      gap: 2em; 
+      margin-top: 2em; 
     }
   
     .scroll-up-image {
-      margin-top: 1em; /* Bring closer to the form */
-      width: 2em; /* Smaller scroll button */
+      margin-top: 1em; 
+      width: 2em; 
     }
   }
   
@@ -629,19 +629,19 @@
       }
     
       .navbar-links {
-        display: none; /* Hide links initially for mobile view */
+        display: none; 
         flex-direction: column;
-        gap: 1.5em; /* Increase space between buttons for easy clicking */
+        gap: 1.5em; 
         width: 100%;
         margin-top: 0.75em;
       }
     
       .navbar-links.show {
-        display: flex; /* Show links when the hamburger button is clicked */
+        display: flex;
       }
     
       .hamburger-button {
-        display: block; /* Show hamburger button for mobile */
+        display: block; 
         font-size: 2.5rem;
         margin-left: auto;
       }
@@ -655,101 +655,100 @@
   
     /* Home Section Adjustments */
     .home-name {
-      font-size: 11vw; /* Adjust for larger screens compared to mobile */
+      font-size: 11vw; 
     }
   
     .home-info {
-      font-size: 4.5vw; /* Slight increase for readability */
+      font-size: 4.5vw;
     }
   
     .social-icons {
-      gap: 2.5em; /* Increase gap between icons */
-      margin-top: 4em; /* Moderate the space to improve spacing on tablets */
+      gap: 2.5em; 
+      margin-top: 4em; 
     }
   
     .social-icon {
-      width: 10vw; /* Slightly larger for touch targets */
+      width: 10vw; 
       height: 10vw;
     }
   
     .scroll-image {
-      margin-top: 4em; /* Adjust scroll image placement */
-      margin-bottom: 1em; /* Keep a bit more space from the bottom */
-      width: 3.5em; /* Slightly larger for touch accessibility */
+      margin-top: 4em; 
+      margin-bottom: 1em; 
+      width: 3.5em;
     }
   
     /* About Section Adjustments */
     .about-section {
-      align-items: center; /* Center content for larger tablet screens */
+      align-items: center; 
       text-align: center;
       padding: 3em; 
     }
   
     .profile-image {
-      width: 180px; /* Increase size compared to mobile */
+      width: 180px; 
       height: 180px;
       margin: 0 1.5em 1.5em 0;
-      float: none; /* No float, center-align instead */
+      float: none; 
       opacity: 1;
-      transform: none; /* Remove animations for simplicity */
+      transform: none;
     }
   
     .about-content {
-      max-width: 90%; /* Use a bit less width for better readability */
+      max-width: 90%; 
     }
   
     .about-title {
-      font-size: 4em; /* Adjust to maintain readability */
+      font-size: 4em; 
       margin-top: 1.5em;
     }
   
     .about-description {
       font-size: 1.1em;
-      line-height: 1.6; /* Increase line height for readability */
+      line-height: 1.6; 
       margin-top: 0.5em;
     }
   
     .download-button {
       margin-top: .5em;
-      font-size: 1.5em; /* Adjust button font size */
-      padding: .6em 1.2em; /* Moderate padding for comfortable touch */
+      font-size: 1.5em;
+      padding: .6em 1.2em; 
     }
   
     /* CV Section Adjustments */
     .cv-section {
-      padding: 2em; /* Slightly increased padding for more space */
+      padding: 2em; 
     }
   
     .cv-title {
-        font-size: 5em; /* Adjust for better visibility */
+        font-size: 5em; 
         padding-bottom: .2em;
         padding-top: 1em;
     }
   
     .cv-description {
       font-size: 2.4em;
-      margin-bottom: 1em; /* Add space between title and container */
+      margin-bottom: 1em; 
     }
   
     .cv-container {
       width: 100%;
-      height: 400px; /* Adjust height for larger devices */
+      height: 400px; 
       margin-top: 2em;
     }
   
     /* Portfolio Section Adjustments */
     .portfolio-section {
-      padding: 2em; /* Add padding for visual balance */
+      padding: 2em; 
     }
   
     .portfolio-title {
-      font-size: 3.5em; /* Slightly larger for better visibility */
+      font-size: 3.5em; 
     }
   
     .portfolio-description {
       font-size: 2.4em;
-      margin-bottom: 1em; /* Maintain consistent spacing */
-    }
+      margin-bottom: 1em; }
   
     .portfolio-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -782,41 +781,41 @@
   
     /* Contact Section Adjustments */
     .contact-section {
-      padding: 2em; /* Moderate padding for balance */
+      padding: 2em; 
     }
   
     .contact-title {
-      font-size: 3.2em; /* Reduce slightly */
+      font-size: 3.2em; 
     }
   
     .contact-description {
-      font-size: 2.4em; /* Adjust font size for readability */
+      font-size: 2.4em; 
     }
   
     .contact-form {
-      max-width: 100%; /* Use full width of the screen */
-      gap: 1em; /* Adjust gap between inputs */
+      max-width: 100%; 
+      gap: 1em;
     }
   
     .contact-form input,
     .contact-form textarea {
-      padding: 0.75em; /* Increase padding slightly for tablets */
-      font-size: 1.3em; /* Adjust font size for readability */
+      padding: 0.75em; 
+      font-size: 1.3em; 
     }
   
     .submit-button {
-      font-size: 1.8em; /* Adjust button font size */
-      padding: 0.6em 1.2em; /* Moderate padding for larger devices */
+      font-size: 1.8em; 
+      padding: 0.6em 1.2em;
     }
   
     .social-icons {
-      gap: 3em; /* Adjust space between icons */
-      margin-top: 2em; /* Moderate space above icons */
+      gap: 3em; 
+      margin-top: 2em;
     }
   
     .scroll-up-image {
-      margin-top: 1.5em; /* Adjust for better spacing */
-      width: 3em; /* Increase scroll button size */
+      margin-top: 1.5em; 
+      width: 3em;
     }
   }
 
@@ -829,63 +828,63 @@
 
     /* Navbar Section Adjustments */
     .navbar {
-        flex-direction: row; /* Maintain default horizontal layout */
-        align-items: center; /* Center align items */
+        flex-direction: row; 
+        align-items: center;
         padding: .3rem 2rem;
     }
 
     .navbar-links {
-        display: flex; /* Always show links */
-        flex-direction: row; /* Keep horizontal alignment */
-        gap: 2em; /* Increase space between buttons for easier navigation */
+        display: flex;
+        flex-direction: row; 
+        gap: 2em;
     }
 
     .navbar-links button {
-        text-align: center; /* Center button text */
-        padding: 0.75rem 1.5rem; /* Add moderate padding */
-        width: auto; /* Keep default width */
+        text-align: center; 
+        padding: 0.75rem 1.5rem; 
+        width: auto; 
     }
 
     /* Home Section Adjustments */
     .home-name {
-        font-size: 13vw; /* Adjust size for larger screens */
+        font-size: 13vw;
     }
 
     .home-info {
-        font-size: 5vw; /* Further adjust for readability */
+        font-size: 5vw; 
     }
 
     .social-icons {
-        gap: 3em; /* Increase gap between icons */
-        margin-top: 5em; /* Increase space to create more balance */
+        gap: 3em; 
+        margin-top: 5em; 
     }
 
     .social-icon {
-        width: 8vw; /* Adjust icon size */
+        width: 8vw;
         height: 8vw;
     }
 
     .scroll-image {
-        margin-top: 4em; /* Moderate scroll image spacing */
-        margin-bottom: 1.5em; /* Add more space from the bottom */
-        width: 4em; /* Slightly increase for visibility */
+        margin-top: 4em; 
+        margin-bottom: 1.5em; 
+        width: 4em; 
     }
 
     /* About Section Adjustments */
     .about-section {
        
-        align-items: center; /* Center-align for larger displays */
+        align-items: center; 
         text-align: center;
-        padding: 1em; /* Increase padding for visual appeal */
+        padding: 1em; 
     }
 
     .profile-image {
-        width: 250px; /* Larger image for greater emphasis */
+        width: 250px; 
         height: 250px;
         margin: 0 2em 2em 0;
-        float: none; /* No float, always centered */
+        float: none; 
         opacity: 1;
-        transform: none; /* Keep visible */
+        transform: none; 
     }
 
     .about-content {
@@ -894,118 +893,120 @@
     }
 
     .about-title {
-        font-size: 5.5em; /* Adjust size for visual appeal */
+        font-size: 5.5em; 
         margin-top: 1em;
     
     }
 
     .about-description {
-        font-size: 2em; /* Adjust text size for readability */
-        line-height: 1.8; /* Further improve line spacing */
+        font-size: 2em; 
+        line-height: 1.8;
         margin-top: 0.5em;
     }
 
     .download-button {
         margin-top: 1em;
-        font-size: 1.5em; /* Reduce button font size for balance */
+        font-size: 1.5em; 
        
     }
 
     /* CV Section Adjustments */
     .cv-section {
-        padding: 1em; /* Increase padding to add breathing space */
+        padding: 1em; 
     }
 
     .cv-title {
-        font-size: 5em; /* Adjust for better visibility */
+        font-size: 5em; 
         padding-bottom: 1em;
         padding-top: 1em;
     }
 
     .cv-description {
-        font-size: 3em; /* Adjust font size */
-        margin-bottom: 1em; /* Add more space for a cleaner layout */
+        font-size: 3em; 
+        margin-bottom: 1em;
     }
 
     .cv-container {
         width: 90%;
-        height: 600px; /* Increase height to better fit larger screens */
+        height: 600px; 
         margin-top: 1em;
     }
 
     /* Portfolio Section Adjustments */
     .portfolio-section {
-        padding: 2em; /* Add padding for a spacious look */
+        padding: 2em; 
     }
 
     .portfolio-title {
-        font-size: 6.5em; /* Adjust title size */
+        font-size: 6.5em;
     }
 
     .portfolio-description {
-        font-size: 2.9em; /* Reduce slightly for readability */
-        margin-bottom: 1.5em; /* Consistent spacing */
+        font-size: 2.9em; 
+        margin-bottom: 1.5em; 
     }
 
     .portfolio-grid {
-        grid-template-columns: repeat(2, 1fr); /* Three items per row for larger screens */
-        gap: 1.5em; /* Increase gap for better visual separation */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5em; 
+
     }
 
     .portfolio-item {
-        min-height: 200px; /* Increase height for better display */
+        min-height: 200px; 
     }
 
     .project-title {
-        font-size: 2em; /* Adjust font size for readability */
+        font-size: 2em; 
     }
 
     .portfolio-hover p {
-        font-size: 1.1em; /* Slightly larger for better readability */
+        font-size: 1.1em; 
     }
 
     .portfolio-hover a {
-        font-size: 1.1em; /* Adjust link text size */
+        font-size: 1.1em; 
     }
 
     /* Contact Section Adjustments */
     .contact-section {
-        padding: 2em; /* Increase padding for visual balance */
+        padding: 2em;
+
     }
 
     .contact-title {
-        font-size: 5em; /* Adjust size to fit larger screen */
+        font-size: 5em; 
     }
 
     .contact-description {
-        font-size: 3.5em; /* Adjust for readability */
+        font-size: 3.5em;
     }
 
     .contact-form {
-        max-width: 80%; /* Slightly restrict width for readability */
+        max-width: 80%; 
         font-size: 1.5em;
-        gap: 1.5em; /* Increase gap between inputs */
+        gap: 1.5em; 
     }
 
     .contact-form input,
     .contact-form textarea {
-        padding: 1em; /* Increase padding for comfort */
-        font-size: 1.7em; /* Increase font size for readability */
+        padding: 1em; 
+        font-size: 1.7em;
     }
 
     .submit-button {
-        font-size: 1.8em; /* Keep size suitable for visibility */
-        padding: 0.8em 1.5em; /* Increase padding for a comfortable touch target */
+        font-size: 1.8em;
+        padding: 0.8em 1.5em; 
     }
 
     .social-icons {
-        gap: 3em; /* Adjust space between icons */
-        margin-top: 2.5em; /* Moderate space above icons */
+        gap: 3em; 
+        margin-top: 2.5em; 
     }
 
     .scroll-up-image {
-        margin-top: 2em; /* Adjust for balanced spacing */
-        width: 3.5em; /* Increase scroll button size */
+        margin-top: 2em; 
+        width: 3.5em; 
     }
 }
 
@@ -1020,63 +1021,63 @@
 
   /* Navbar Section Adjustments */
   .navbar {
-      flex-direction: row; /* Maintain default horizontal layout */
-      align-items: center; /* Center align items */
+      flex-direction: row; 
+      align-items: center;
       padding: .3rem 2rem; 
   }
 
   .navbar-links {
-      display: flex; /* Always show links */
-      flex-direction: row; /* Keep horizontal alignment */
-      gap: 2em; /* Increase space between buttons for easier navigation */
+      display: flex; 
+      flex-direction: row; 
+      gap: 2em; 
   }
 
   .navbar-links button {
-      text-align: center; /* Center button text */
-      padding: 0.75rem 1.5rem; /* Add moderate padding */
-      width: auto; /* Keep default width */
+      text-align: center;
+      padding: 0.75rem 1.5rem; 
+      width: auto; 
   }
 
   /* Home Section Adjustments */
   .home-name {
-      font-size: 7vw; /* Adjust size for larger screens */
+      font-size: 7vw; 
   }
 
   .home-info {
-      font-size: 3vw; /* Further adjust for readability */
+      font-size: 3vw; 
   }
 
   .social-icons {
-      gap: 3em; /* Increase gap between icons */
-      margin-top: 5em; /* Increase space to create more balance */
+      gap: 3em; 
+      margin-top: 5em; 
   }
 
   .social-icon {
-      width: 5vw; /* Adjust icon size */
+      width: 5vw;
       height: 5vw;
   }
 
   .scroll-image {
-      margin-top: 2em; /* Moderate scroll image spacing */
-      margin-bottom: 1.5em; /* Add more space from the bottom */
-      width: 4em; /* Slightly increase for visibility */
+      margin-top: 2em; 
+      margin-bottom: 1.5em;
+      width: 4em; 
   }
 
   /* About Section Adjustments */
   .about-section {
      
-      align-items: center; /* Center-align for larger displays */
+      align-items: center; 
       text-align: center;
-      padding: 1em; /* Increase padding for visual appeal */
-  }
+      padding: 1em; }
+
 
   .profile-image {
-      width: 200px; /* Larger image for greater emphasis */
+      width: 200px; 
       height: 200px;
       margin: 0 2em 2em 0;
-      float: none; /* No float, always centered */
+      float: none; 
       opacity: 1;
-      transform: none; /* Keep visible */
+      transform: none; 
   }
 
   .about-content {
@@ -1085,309 +1086,121 @@
   }
 
   .about-title {
-      font-size: 4em; /* Adjust size for visual appeal */
+      font-size: 4em; 
       margin-top: 1em;
   
   }
 
   .about-description {
-      font-size: 1.3em; /* Adjust text size for readability */
-      line-height: 1.8; /* Further improve line spacing */
+      font-size: 1.3em; 
+      line-height: 1.8; 
       margin-top: 0.5em;
   }
 
   .download-button {
       margin-top: 1em;
-      font-size: 1.5em; /* Reduce button font size for balance */
+      font-size: 1.5em; 
      
   }
 
   /* CV Section Adjustments */
   .cv-section {
-      padding: 1em; /* Increase padding to add breathing space */
+      padding: 1em; 
   }
 
   .cv-title {
-      font-size: 3em; /* Adjust for better visibility */
+      font-size: 3em;
       padding-bottom: 1em;
       padding-top: 1em;
   }
 
   .cv-description {
-      font-size: 2.1em; /* Adjust font size */
-      margin-bottom: 1em; /* Add more space for a cleaner layout */
+      font-size: 2.1em; 
+      margin-bottom: 1em; 
   }
 
   .cv-container {
       width: 90%;
-      height: 600px; /* Increase height to better fit larger screens */
+      height: 600px;
       margin-top: 1em;
   }
 
   /* Portfolio Section Adjustments */
   .portfolio-section {
-      padding: 3em; /* Add padding for a spacious look */
+      padding: 3em; 
   }
 
   .portfolio-title {
-      font-size: 3.5em; /* Adjust title size */
+      font-size: 3.5em;
   }
 
   .portfolio-description {
-      font-size: 1.9em; /* Reduce slightly for readability */
-      margin-bottom: 1.5em; /* Consistent spacing */
+      font-size: 1.9em; 
+      margin-bottom: 1.5em; 
   }
 
   .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr); /* Three items per row for larger screens */
-      gap: 1.5em; /* Increase gap for better visual separation */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5em; 
   }
 
   .portfolio-item {
-      min-height: 200px; /* Increase height for better display */
+      min-height: 200px; 
   }
 
   .project-title {
-      font-size: 2em; /* Adjust font size for readability */
+      font-size: 2em;
   }
 
   .portfolio-hover p {
-      font-size: 1.1em; /* Slightly larger for better readability */
+      font-size: 1.1em; 
   }
 
   .portfolio-hover a {
-      font-size: 1.1em; /* Adjust link text size */
+      font-size: 1.1em;
   }
 
   /* Contact Section Adjustments */
   .contact-section {
-      padding: 3em; /* Increase padding for visual balance */
+      padding: 3em;
   }
 
   .contact-title {
-      font-size: 3em; /* Adjust size to fit larger screen */
+      font-size: 3em; 
   }
 
   .contact-description {
-      font-size: 2.2em; /* Adjust for readability */
+      font-size: 2.2em; 
   }
 
   .contact-form {
-      max-width: 80%; /* Slightly restrict width for readability */
+      max-width: 80%; 
       font-size: 1.5em;
-      gap: 1.5em; /* Increase gap between inputs */
+      gap: 1.5em; 
   }
 
   .contact-form input,
   .contact-form textarea {
-      padding: 1em; /* Increase padding for comfort */
-      font-size: 1.5em; /* Increase font size for readability */
+      padding: 1em; 
+      font-size: 1.5em;
+
   }
 
   .submit-button {
-      font-size: 1.8em; /* Keep size suitable for visibility */
-      padding: 0.8em 1.5em; /* Increase padding for a comfortable touch target */
+      font-size: 1.8em; 
+      padding: 0.8em 1.5em; 
   }
 
   .social-icons {
-      gap: 3em; /* Adjust space between icons */
-      margin-top: 2.5em; /* Moderate space above icons */
+      gap: 3em; 
+      margin-top: 2.5em; 
   }
 
   .scroll-up-image {
-      margin-top: 2em; /* Adjust for balanced spacing */
-      width: 3.5em; /* Increase scroll button size */
+      margin-top: 2em; 
+      width: 3.5em;
   }
 }
-
-
-
-
-/*@media (min-width: 850px) and (max-width: 1279px) and (min-height: 400px) and (max-height: 560px)*/
-
-@media (min-width: 850px) and (max-width: 1279px) and (min-height: 400px) and (max-height: 560px) {
-  /* Navbar Section Adjustments */
-  .navbar {
-    flex-direction: row; /* Maintain default horizontal layout */
-    align-items: center; /* Center align items */
-    padding: .3rem 4rem; /* Increase padding for better spacing */
-}
-
-.navbar-links {
-    display: flex; /* Always show links */
-    flex-direction: row; /* Keep horizontal alignment */
-    gap: 2.5em; /* Increase space between buttons for easier navigation */
-}
-
-.navbar-links button {
-    text-align: center; /* Center button text */
-    padding: 1rem 2rem; /* Add more padding for larger screen visibility */
-    width: auto; /* Keep default width */
-}
-
-/* Home Section Adjustments */
-.home-name {
-    font-size: 5vw; /* Adjust size for larger screens */
-}
-
-.home-info {
-    font-size: 2vw; /* Adjust text size for readability */
-}
-
-.social-icons {
-    gap: 3.5em; /* Increase gap between icons */
-    margin-top: 5em; /* Increase space to create more balance */
-}
-
-.social-icon {
-    width: 4vw; /* Adjust icon size */
-    height: 4vw;
-}
-
-.scroll-image {
-    margin-top: 3em; /* Moderate scroll image spacing */
-    margin-bottom: 1.5em; /* Add more space from the bottom */
-    width: 3.5em; /* Increase for better visibility */
-}
-
-/* About Section Adjustments */
-.about-section {
-    align-items: center; /* Center-align for larger displays */
-    text-align: center;
-    padding: 1em; /* Increase padding for visual appeal */
-}
-
-.profile-image {
-    width: 250px; /* Larger image for greater emphasis */
-    height: 250px;
-    margin: 0 2em 2em 0;
-    float: none; /* No float, always centered */
-    opacity: 1;
-    transform: none; /* Keep visible */
-}
-
-.about-content {
-    padding-top: 1em;
-    max-width: 70%; /* Slightly reduce max width for better readability */
-}
-
-.about-title {
-    font-size: 3.5em; /* Adjust size for visual appeal */
-    margin-top: 1em;
-}
-
-.about-description {
-    font-size: 1.4em; /* Adjust text size for readability */
-    line-height: 1.8; /* Further improve line spacing */
-    margin-top: 1em;
-}
-
-.download-button {
-    margin-top: .5em;
-    font-size: 1.2em;
-}
-
-/* CV Section Adjustments */
-.cv-section {
-    padding: 1em; /* Increase padding to add breathing space */
-}
-
-.cv-title {
-    font-size: 4.5em; /* Adjust for better visibility */
-    padding-bottom: .2em;
- 
-}
-
-.cv-description {
-    font-size: 2.5em; /* Adjust font size */
-    margin-bottom: 2em; /* Add more space for a cleaner layout */
-}
-
-.cv-container {
-    width: 90%;
-    height: 700px; /* Increase height to better fit larger screens */
-    margin-top: 3em;
-}
-
-/* Portfolio Section Adjustments */
-.portfolio-section {
-    padding: 3em; /* Add padding for a spacious look */
-}
-
-.portfolio-title {
-    font-size: 4em; /* Adjust title size */
-}
-
-.portfolio-description {
-    font-size: 2em; /* Adjust size for readability */
-    margin-bottom: 2em; /* Consistent spacing */
-}
-
-.portfolio-grid {
-    grid-template-columns: repeat(3, 1fr); /* Three items per row for larger screens */
-    gap: 2em; /* Increase gap for better visual separation */
-}
-
-.portfolio-item {
-    min-height: 250px; /* Increase height for better display */
-}
-
-.project-title {
-    font-size: 2.5em; /* Adjust font size for readability */
-}
-
-.portfolio-hover p {
-    font-size: 1.2em; /* Slightly larger for better readability */
-}
-
-.portfolio-hover a {
-    font-size: 1.2em; /* Adjust link text size */
-}
-
-/* Contact Section Adjustments */
-.contact-section {
-    padding: 3em; /* Increase padding for visual balance */
-}
-
-.contact-title {
-    font-size: 3em; /* Adjust size to fit larger screen */
-}
-
-.contact-description {
-    font-size: 1.5em; /* Adjust for readability */
-}
-
-.contact-form {
-    max-width: 70%; /* Restrict width a bit more for readability */
-    font-size: 1em;
-    gap: 1em; /* Increase gap between inputs */
-}
-
-.contact-form input,
-.contact-form textarea {
-    padding: 1em; /* Increase padding for comfort */
-    font-size: 1em; /* Increase font size for readability */
-}
-
-.submit-button {
-    font-size: 1.2em; /* Keep size suitable for visibility */
-    padding: 1em ; /* Increase padding for a comfortable touch target */
-}
-
-.social-icons {
-    gap: 3.5em; /* Adjust space between icons */
-    margin-top: 3em; /* Moderate space above icons */
-}
-
-.scroll-up-image {
-    margin-top: 2.5em; /* Adjust for balanced spacing */
-    width: 4em; /* Increase scroll button size */
-}
-
-}
-
-
-
 
 
 
@@ -1401,77 +1214,77 @@
 
     /* Navbar Section Adjustments */
     .navbar {
-        flex-direction: row; /* Maintain default horizontal layout */
-        align-items: center; /* Center align items */
-        padding: .3rem 4rem; /* Increase padding for better spacing */
+        flex-direction: row;
+        align-items: center;
+        padding: .3rem 4rem; 
     }
 
     .navbar-links {
-        display: flex; /* Always show links */
-        flex-direction: row; /* Keep horizontal alignment */
-        gap: 2.5em; /* Increase space between buttons for easier navigation */
+        display: flex; 
+        flex-direction: row; 
+        gap: 2.5em; 
     }
 
     .navbar-links button {
-        text-align: center; /* Center button text */
-        padding: 1rem 2rem; /* Add more padding for larger screen visibility */
-        width: auto; /* Keep default width */
+        text-align: center;
+        padding: 1rem 2rem; 
+        width: auto; 
     }
 
     /* Home Section Adjustments */
     .home-name {
-        font-size: 5vw; /* Adjust size for larger screens */
+        font-size: 5vw; 
     }
 
     .home-info {
-        font-size: 2vw; /* Adjust text size for readability */
+        font-size: 2vw; 
     }
 
     .social-icons {
-        gap: 3.5em; /* Increase gap between icons */
-        margin-top: 5em; /* Increase space to create more balance */
+        gap: 3.5em;
+        margin-top: 5em; 
     }
 
     .social-icon {
-        width: 4vw; /* Adjust icon size */
+        width: 4vw;
         height: 4vw;
     }
 
     .scroll-image {
-        margin-top: 3em; /* Moderate scroll image spacing */
-        margin-bottom: 1.5em; /* Add more space from the bottom */
-        width: 3.5em; /* Increase for better visibility */
+        margin-top: 3em; 
+        margin-bottom: 1.5em; 
+        width: 3.5em; 
     }
 
     /* About Section Adjustments */
     .about-section {
-        align-items: center; /* Center-align for larger displays */
+        align-items: center; 
         text-align: center;
-        padding: 1em; /* Increase padding for visual appeal */
+        padding: 1em;
     }
 
     .profile-image {
-        width: 250px; /* Larger image for greater emphasis */
+        width: 250px; 
         height: 250px;
         margin: 0 2em 2em 0;
-        float: none; /* No float, always centered */
+        float: none;
         opacity: 1;
-        transform: none; /* Keep visible */
+        transform: none; 
     }
 
     .about-content {
         padding-top: 1em;
-        max-width: 70%; /* Slightly reduce max width for better readability */
+        max-width: 70%;
     }
 
     .about-title {
-        font-size: 3.5em; /* Adjust size for visual appeal */
+        font-size: 3.5em; 
         margin-top: 1em;
     }
 
     .about-description {
-        font-size: 1.4em; /* Adjust text size for readability */
-        line-height: 1.8; /* Further improve line spacing */
+        font-size: 1.4em; 
+        line-height: 1.8; 
         margin-top: 1em;
     }
 
@@ -1482,99 +1295,99 @@
 
     /* CV Section Adjustments */
     .cv-section {
-        padding: 1em; /* Increase padding to add breathing space */
+        padding: 1em; 
     }
 
     .cv-title {
-        font-size: 4.5em; /* Adjust for better visibility */
+        font-size: 4.5em; 
         padding-bottom: .2em;
      
     }
 
     .cv-description {
-        font-size: 2.5em; /* Adjust font size */
-        margin-bottom: 2em; /* Add more space for a cleaner layout */
+        font-size: 2.5em; 
+        margin-bottom: 2em;
     }
 
     .cv-container {
         width: 90%;
-        height: 700px; /* Increase height to better fit larger screens */
+        height: 700px; 
         margin-top: 3em;
     }
 
     /* Portfolio Section Adjustments */
     .portfolio-section {
-        padding: 3em; /* Add padding for a spacious look */
+        padding: 3em; 
     }
 
     .portfolio-title {
-        font-size: 4em; /* Adjust title size */
+        font-size: 4em; 
     }
 
     .portfolio-description {
-        font-size: 2em; /* Adjust size for readability */
-        margin-bottom: 2em; /* Consistent spacing */
+        font-size: 2em; 
+        margin-bottom: 2em;
     }
 
     .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr); /* Three items per row for larger screens */
-        gap: 2em; /* Increase gap for better visual separation */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 2em; 
     }
 
     .portfolio-item {
-        min-height: 250px; /* Increase height for better display */
+        min-height: 250px;
     }
 
     .project-title {
-        font-size: 2.5em; /* Adjust font size for readability */
+        font-size: 2.5em;
     }
 
     .portfolio-hover p {
-        font-size: 1.2em; /* Slightly larger for better readability */
+        font-size: 1.2em; 
     }
 
     .portfolio-hover a {
-        font-size: 1.2em; /* Adjust link text size */
+        font-size: 1.2em; 
     }
 
     /* Contact Section Adjustments */
     .contact-section {
-        padding: 3em; /* Increase padding for visual balance */
+        padding: 3em; 
     }
 
     .contact-title {
-        font-size: 3em; /* Adjust size to fit larger screen */
+        font-size: 3em; 
     }
 
     .contact-description {
-        font-size: 1.5em; /* Adjust for readability */
+        font-size: 1.5em; 
     }
 
     .contact-form {
-        max-width: 70%; /* Restrict width a bit more for readability */
+        max-width: 70%; 
         font-size: 1em;
-        gap: 1em; /* Increase gap between inputs */
+        gap: 1em; 
     }
 
     .contact-form input,
     .contact-form textarea {
-        padding: 1em; /* Increase padding for comfort */
-        font-size: 1em; /* Increase font size for readability */
+        padding: 1em; 
+        font-size: 1em;
     }
 
     .submit-button {
-        font-size: 1.2em; /* Keep size suitable for visibility */
-        padding: 1em ; /* Increase padding for a comfortable touch target */
+        font-size: 1.2em;
+        padding: 1em ; 
     }
 
     .social-icons {
-        gap: 3.5em; /* Adjust space between icons */
-        margin-top: 3em; /* Moderate space above icons */
+        gap: 3.5em; 
+        margin-top: 3em; 
     }
 
     .scroll-up-image {
-        margin-top: 2.5em; /* Adjust for balanced spacing */
-        width: 4em; /* Increase scroll button size */
+        margin-top: 2.5em; 
+        width: 4em; 
     }
 }
 
@@ -1588,77 +1401,78 @@
 
   /* Navbar Section Adjustments */
   .navbar {
-      flex-direction: row; /* Maintain default horizontal layout */
-      align-items: center; /* Center align items */
-      padding: .3rem 4rem; /* Increase padding for better spacing */
+      flex-direction: row;
+      align-items: center; 
+      padding: .3rem 4rem; 
   }
 
   .navbar-links {
-      display: flex; /* Always show links */
-      flex-direction: row; /* Keep horizontal alignment */
-      gap: 2.5em; /* Increase space between buttons for easier navigation */
+      display: flex; 
+      flex-direction: row; 
+      gap: 2.5em; 
   }
 
   .navbar-links button {
-      text-align: center; /* Center button text */
-      padding: 1rem 2rem; /* Add more padding for larger screen visibility */
-      width: auto; /* Keep default width */
+      text-align: center; 
+      padding: 1rem 2rem; 
+      width: auto;
   }
 
   /* Home Section Adjustments */
   .home-name {
-      font-size: 5vw; /* Adjust size for larger screens */
+      font-size: 5vw; 
   }
 
   .home-info {
-      font-size: 2vw; /* Adjust text size for readability */
+      font-size: 2vw; 
   }
 
   .social-icons {
-      gap: 3.5em; /* Increase gap between icons */
-      margin-top: 5em; /* Increase space to create more balance */
+      gap: 3.5em; 
+      margin-top: 5em; 
   }
 
   .social-icon {
-      width: 4vw; /* Adjust icon size */
+      width: 4vw; 
       height: 4vw;
   }
 
   .scroll-image {
-      margin-top: 3em; /* Moderate scroll image spacing */
-      margin-bottom: 1.5em; /* Add more space from the bottom */
-      width: 3.5em; /* Increase for better visibility */
+      margin-top: 3em;
+      margin-bottom: 1.5em; 
+      width: 3.5em; 
   }
 
   /* About Section Adjustments */
   .about-section {
-      align-items: center; /* Center-align for larger displays */
+      align-items: center;
       text-align: center;
-      padding: 1em; /* Increase padding for visual appeal */
+      padding: 1em;
   }
 
   .profile-image {
-      width: 250px; /* Larger image for greater emphasis */
+      width: 250px; 
       height: 250px;
       margin: 0 2em 2em 0;
-      float: none; /* No float, always centered */
+      float: none; 
       opacity: 1;
-      transform: none; /* Keep visible */
+      transform: none; 
   }
 
   .about-content {
       padding-top: 1em;
-      max-width: 70%; /* Slightly reduce max width for better readability */
+      max-width: 70%; 
   }
 
   .about-title {
-      font-size: 3.5em; /* Adjust size for visual appeal */
+      font-size: 3.5em; 
       margin-top: 1em;
   }
 
   .about-description {
-      font-size: 1.4em; /* Adjust text size for readability */
-      line-height: 1.8; /* Further improve line spacing */
+      font-size: 1.4em;
+      line-height: 1.8; 
+
       margin-top: 1em;
   }
 
@@ -1669,98 +1483,98 @@
 
   /* CV Section Adjustments */
   .cv-section {
-      padding: 1em; /* Increase padding to add breathing space */
+      padding: 1em; 
   }
 
   .cv-title {
-      font-size: 4.5em; /* Adjust for better visibility */
+      font-size: 4.5em; 
       padding-bottom: .2em;
    
   }
 
   .cv-description {
-      font-size: 2.5em; /* Adjust font size */
-      margin-bottom: 2em; /* Add more space for a cleaner layout */
+      font-size: 2.5em; 
+      margin-bottom: 2em; 
   }
 
   .cv-container {
       width: 90%;
-      height: 700px; /* Increase height to better fit larger screens */
+      height: 700px; 
       margin-top: 3em;
   }
 
   /* Portfolio Section Adjustments */
   .portfolio-section {
-      padding: 3em; /* Add padding for a spacious look */
+      padding: 3em; 
   }
 
   .portfolio-title {
-      font-size: 4em; /* Adjust title size */
+      font-size: 4em; 
   }
 
   .portfolio-description {
-      font-size: 2em; /* Adjust size for readability */
-      margin-bottom: 2em; /* Consistent spacing */
+      font-size: 2em; 
+      margin-bottom: 2em; 
   }
 
   .portfolio-grid {
-      grid-template-columns: repeat(3, 1fr); /* Three items per row for larger screens */
-      gap: 2em; /* Increase gap for better visual separation */
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 2em; 
   }
 
   .portfolio-item {
-      min-height: 250px; /* Increase height for better display */
+      min-height: 250px;
   }
 
   .project-title {
-      font-size: 2.5em; /* Adjust font size for readability */
+      font-size: 2.5em; 
   }
 
   .portfolio-hover p {
-      font-size: 1.2em; /* Slightly larger for better readability */
+      font-size: 1.2em; 
   }
 
   .portfolio-hover a {
-      font-size: 1.2em; /* Adjust link text size */
+      font-size: 1.2em; 
   }
 
   /* Contact Section Adjustments */
   .contact-section {
-      padding: 3em; /* Increase padding for visual balance */
+      padding: 3em; 
   }
 
   .contact-title {
-      font-size: 3em; /* Adjust size to fit larger screen */
+      font-size: 3em; 
   }
 
   .contact-description {
-      font-size: 1.5em; /* Adjust for readability */
+      font-size: 1.5em; 
   }
 
   .contact-form {
-      max-width: 70%; /* Restrict width a bit more for readability */
+      max-width: 70%; 
       font-size: 1em;
-      gap: 1em; /* Increase gap between inputs */
+      gap: 1em;
   }
 
   .contact-form input,
   .contact-form textarea {
-      padding: 1em; /* Increase padding for comfort */
-      font-size: 1em; /* Increase font size for readability */
+      padding: 1em; 
+      font-size: 1em;
   }
 
   .submit-button {
-      font-size: 1.2em; /* Keep size suitable for visibility */
-      padding: 1em ; /* Increase padding for a comfortable touch target */
+      font-size: 1.2em; 
+      padding: 1em ;
   }
 
   .social-icons {
-      gap: 3.5em; /* Adjust space between icons */
-      margin-top: 3em; /* Moderate space above icons */
+      gap: 3.5em; 
+      margin-top: 3em; 
   }
 
   .scroll-up-image {
-      margin-top: 2.5em; /* Adjust for balanced spacing */
-      width: 4em; /* Increase scroll button size */
+      margin-top: 2.5em; 
+      width: 4em;
   }
 }
