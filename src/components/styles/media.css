@@ -131,16 +131,13 @@
       margin-bottom: .1em; 
     }
   
-    .cv-container iframe {
+    .cv-container {
       width: 100%;
       height: 500px;
       margin-top: 1.5em;
-      transform: scale(0.75); 
-        transform-origin: top left;}
-
-   
-        
- 
+      
+    }
+  
     /*Portfolio section*/
 
     .portfolio-section {
@@ -337,12 +334,10 @@
       margin-bottom: .1em; 
     }
   
-    .cv-container iframe {
+    .cv-container {
       width: 100%;
       height: 500px;
       margin-top: 1.5em;
-      transform: scale(0.75); 
-        transform-origin: top left;
     }
   
     /* Portfolio Section Adjustments */
@@ -539,12 +534,10 @@
       margin-bottom: .5em; 
     }
   
-    .cv-container iframe {
+    .cv-container {
       width: 100%;
       height: 500px;
       margin-top: 4.5em;
-      transform: scale(0.75); 
-        transform-origin: top left;
     }
   
     /* Portfolio Section Adjustments */
@@ -739,12 +732,10 @@
       margin-bottom: 1em; 
     }
   
-    .cv-container iframe{
+    .cv-container {
       width: 100%;
       height: 400px; 
       margin-top: 2em;
-      transform: scale(0.75); 
-        transform-origin: top left;
     }
   
     /* Portfolio Section Adjustments */
@@ -936,12 +927,10 @@
         margin-bottom: 1em;
     }
 
-    .cv-container iframe{
+    .cv-container {
         width: 90%;
         height: 600px; 
         margin-top: 1em;
-        transform: scale(0.75); 
-        transform-origin: top left;
     }
 
     /* Portfolio Section Adjustments */
@@ -1131,12 +1120,10 @@
       margin-bottom: 1em; 
   }
 
-  .cv-container iframe{
+  .cv-container {
       width: 90%;
       height: 600px;
       margin-top: 1em;
-      transform: scale(0.75); 
-        transform-origin: top left;
   }
 
   /* Portfolio Section Adjustments */
@@ -1323,12 +1310,10 @@
         margin-bottom: 2em;
     }
 
-    .cv-container iframe{
+    .cv-container {
         width: 90%;
         height: 700px; 
         margin-top: 3em;
-        transform: scale(0.75); 
-        transform-origin: top left;
     }
 
     /* Portfolio Section Adjustments */
@@ -1513,12 +1498,10 @@
       margin-bottom: 2em; 
   }
 
-  .cv-container iframe{
+  .cv-container {
       width: 90%;
       height: 700px; 
       margin-top: 3em;
-      transform: scale(0.75); 
-        transform-origin: top left;
   }
 
   /* Portfolio Section Adjustments */
