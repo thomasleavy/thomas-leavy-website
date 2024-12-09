@@ -40,7 +40,7 @@ function About() {
             <div className={`about-content ${isVisible ? 'visible' : ''}`}>
                 <h2 className={`about-title ${isVisible ? 'visible' : ''}`}>About Me</h2>
                 <p className={`about-description ${isVisible ? 'visible' : ''}`}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a nunc in quam commodo cursus. Cras volutpat odio in velit sagittis, eget aliquet eros interdum. Fusce fringilla, velit in convallis dictum, lectus arcu euismod odio, eu malesuada elit eros vel ante. Suspendisse volutpat consectetur varius.
+                    Hello, my name is Thomas Leavy. I am a hardworking, flexible and resilient primary school teacher based in Limerick. I am completing a HDip in Computer Science, with the aim to progress my career forward in software development. My CV, portfolio and contact info is available below. For more enquiries, email thomasleavy1@outlook.com.
                 </p>
                 <a href="/Thomas-Leavy-CV.pdf" download className={`download-button ${isVisible ? 'visible' : ''}`}>
                     Download CV

@@ -23,7 +23,7 @@ function Home({ scrollToSection }) {
         <p className="home-name">Hey! I'm Thomas Leavy.</p>
         <div className="home-info-container">
           <p className="home-info">
-            I'm a software developer based in <strong>Limerick</strong>, completing a HDip in Computer Science at the National College of Ireland, Dublin.
+            I'm a young professional based in <strong>Limerick</strong>, taking my career further by completing a HDip in <strong>Computer Science</strong> at the National College of Ireland, <strong>Dublin</strong>.
           </p>
         </div>
 
