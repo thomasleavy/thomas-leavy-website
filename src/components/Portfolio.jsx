@@ -11,7 +11,32 @@ function Portfolio() {
 
          {/*Portoflio grid card*/}
 
-        <div className="portfolio-grid">
+         <div className="portfolio-grid">
+        <a
+          href="https://github.com/thomasleavy/eLearningApplication"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-item"
+        >
+          <h1 className="project-title">Primary pals e-Learning Platform</h1>
+          <div className="portfolio-hover">
+            <p>Full-stack e-learning application for primary school pupils and teachers, built with React, Java, Spring Boot, BCrypt, PostgreSQL, pgAdmin 4 and Maven.</p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/thomasleavy/carbon-coach"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-item"
+        >
+          <h1 className="project-title">Carbon Coach</h1>
+          <div className="portfolio-hover">
+            <p>Personal climate-impact tracker. Technologies
+            include React, Typescript, API routes, PostgreSQL and Vercel.</p>
+          </div>
+        </a>
+        
         <a
           href="https://github.com/thomasleavy/goTutorials"
           target="_blank"
