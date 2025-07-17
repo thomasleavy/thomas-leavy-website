@@ -10,6 +10,10 @@ import './components/styles/common.css';
 import './components/styles/media.css';
 
 function App() {
+  // Scroll to top on initial load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Define scrollToSection function
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
