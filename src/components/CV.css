@@ -67,7 +67,7 @@
 
   .cv-container {
       width: 95%;
-      height: 400px;
+      height: 800px; /* Increased from 400px to allow full CV viewing */
   }
 }
 
@@ -83,6 +83,14 @@
 
   .cv-container {
       width: 100%;
-      height: 600px; /* Increased from 300px to allow full CV viewing */
+      height: 900px; /* Increased from 600px to ensure full CV visibility */
+  }
+}
+
+/* Large Mobile Devices (iPhone 16 Plus, etc.) */
+@media (min-width: 481px) and (max-width: 768px) and (min-height: 800px) {
+  .cv-container {
+      width: 95%;
+      height: 1000px; /* Extra large height for larger mobile screens */
   }
 }
