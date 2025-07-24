@@ -10,6 +10,28 @@ function CV() {
       <section id="cv" className="section cv-section">
         <h1 className="cv-title">CV</h1>
         <p className="cv-description">My professional journey and experiences.</p>
+        
+        {/* Mobile-only full view button */}
+        <div className="mobile-cv-button">
+          <a 
+            href={pdfUrl}
+            className="full-view-button"
+            style={{
+              display: 'inline-block',
+              padding: '0.75em 1.5em',
+              backgroundColor: '#eb2f2f',
+              color: 'white',
+              textDecoration: 'none',
+              borderRadius: '5px',
+              fontWeight: 'bold',
+              marginBottom: '1em',
+              transition: 'all 0.3s ease'
+            }}
+          >
+            Can't see My CV fully? Click here.
+          </a>
+        </div>
+        
         <div className="cv-container">
         <iframe
   src={pdfUrl}
