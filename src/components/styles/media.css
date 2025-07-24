@@ -133,7 +133,7 @@
   
     .cv-container {
       width: 100%;
-      height: 600px; /* Increased to allow full CV viewing on mobile */
+      height: 900px; /* Increased to ensure full CV viewing on mobile */
       margin-top: 1.5em;
       
     }
@@ -336,7 +336,7 @@
   
     .cv-container {
       width: 100%;
-      height: 600px; /* Increased to allow full CV viewing on mobile */
+      height: 900px; /* Increased to ensure full CV viewing on mobile */
       margin-top: 1.5em;
     }
   
@@ -536,7 +536,7 @@
   
     .cv-container {
       width: 100%;
-      height: 600px; /* Increased to allow full CV viewing on mobile */
+      height: 900px; /* Increased to ensure full CV viewing on mobile */
       margin-top: 4.5em;
     }
   
@@ -734,7 +734,7 @@
   
     .cv-container {
       width: 100%;
-      height: 400px; 
+      height: 900px; /* Increased to ensure full CV viewing on mobile */
       margin-top: 2em;
     }
   
@@ -929,7 +929,7 @@
 
     .cv-container {
         width: 90%;
-        height: 600px; 
+        height: 900px; /* Increased to ensure full CV viewing on mobile */
         margin-top: 1em;
     }
 
@@ -1122,7 +1122,7 @@
 
   .cv-container {
       width: 90%;
-      height: 600px;
+      height: 900px; /* Increased to ensure full CV viewing on mobile */
       margin-top: 1em;
   }
 
