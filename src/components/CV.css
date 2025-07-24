@@ -25,12 +25,11 @@
 .cv-container {
   width: 80%;
   max-width: 800px;
-  height: 80vh; /* Use viewport height instead of fixed pixels */
+  height: 600px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Keep this to prevent container overflow */
+  overflow: hidden;
   margin-top: 1em;
-  position: relative; /* Ensure proper positioning */
 }
 
 /* CV iframe Styling */
@@ -38,29 +37,8 @@
   width: 100%;
   height: 100%;
   border: none;
-  overflow: auto; /* Enable scrolling within iframe */
+  overflow: visible; /* Allow full interface to be visible */
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: #888 #f1f1f1; /* For Firefox */
-}
-
-/* Custom scrollbar styling for webkit browsers */
-.cv-iframe::-webkit-scrollbar {
-  width: 8px;
-}
-
-.cv-iframe::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-.cv-iframe::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-.cv-iframe::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 /*responsive design styling*/
@@ -75,7 +53,7 @@
 
   .cv-container {
       width: 90%;
-      height: 85vh; /* Use viewport height for better mobile display */
+      height: 500px;
   }
 }
 
@@ -91,7 +69,21 @@
 
   .cv-container {
       width: 95%;
-      height: 90vh; /* Use viewport height for better mobile display */
+      height: 400px;
+  }
+
+  /* Force PDF viewer interface on mobile */
+  .cv-iframe {
+    overflow: visible !important; /* Force visibility of full interface */
+    -webkit-overflow-scrolling: touch;
+    min-height: 100%;
+    height: auto; /* Allow iframe to expand to show full interface */
+  }
+  
+  .cv-container {
+    overflow: visible; /* Allow container to expand */
+    height: auto; /* Allow container to adjust to content */
+    min-height: 600px; /* Minimum height to ensure interface is visible */
   }
 }
 
@@ -107,28 +99,6 @@
 
   .cv-container {
       width: 100%;
-      height: 95vh; /* Use viewport height for better mobile display */
-  }
-}
-
-/* Large Mobile Devices (iPhone 16 Plus, etc.) */
-@media (min-width: 481px) and (max-width: 768px) and (min-height: 800px) {
-  .cv-container {
-      width: 95%;
-      height: 95vh; /* Use viewport height for better mobile display */
-  }
-  
-  .cv-iframe {
-      overflow-y: auto; /* Ensure vertical scrolling is enabled */
-      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  }
-}
-
-/* Mobile-specific iframe optimizations */
-@media (max-width: 768px) {
-  .cv-iframe {
-      overflow-y: auto; /* Ensure vertical scrolling is enabled */
-      -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-      min-height: 100%; /* Ensure iframe takes full container height */
+      height: 300px;
   }
 }
