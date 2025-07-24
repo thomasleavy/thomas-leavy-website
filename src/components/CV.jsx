@@ -28,7 +28,7 @@ function CV() {
               transition: 'all 0.3s ease'
             }}
           >
-            Can't see My CV fully? Click here.
+            Can't see fully? Click here.
           </a>
         </div>
         
