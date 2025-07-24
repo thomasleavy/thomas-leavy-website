@@ -3,8 +3,8 @@ import React from 'react';
 import './CV.css';
 
 function CV() {
-    // Add comprehensive parameters to force full PDF viewer interface on mobile
-    const pdfUrl = `${process.env.PUBLIC_URL}/Thomas-Leavy-CV.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH&zoom=100&pagemode=normal&statusbar=1&messages=1&scrollbar=1&scrollbar=1&scrollbar=1`;
+    // Hide left sidebar (navpanes=0) but keep header bar and 100% zoom
+    const pdfUrl = `${process.env.PUBLIC_URL}/Thomas-Leavy-CV.pdf#toolbar=1&navpanes=0&scrollbar=1&view=FitH&zoom=100&pagemode=normal&statusbar=1&messages=1`;
 
     return (
       <section id="cv" className="section cv-section">
