@@ -102,3 +102,23 @@
       height: 300px;
   }
 }
+
+/* Mobile-only CV button styling */
+.mobile-cv-button {
+  display: none; /* Hidden by default (desktop) */
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.full-view-button:hover {
+  background-color: #d42424 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(235, 47, 47, 0.3);
+}
+
+/* Show button only on mobile devices */
+@media (max-width: 768px) {
+  .mobile-cv-button {
+    display: block; /* Show on mobile */
+  }
+}
