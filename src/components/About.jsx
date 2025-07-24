@@ -42,7 +42,7 @@ function About() {
                 <p className={`about-description ${isVisible ? 'visible' : ''}`}>
                     Hello, my name is Thomas Leavy. I am a hardworking, flexible and resilient software engineer and primary school teacher based in Limerick, Ireland. My CV, portfolio and contact information are available below. For more enquiries, please email thomasleavy1@outlook.com.
                 </p>
-                <a href="/Thomas-Leavy-CV.pdf" download className={`download-button ${isVisible ? 'visible' : ''}`}>
+                <a href={`${process.env.PUBLIC_URL}/Thomas-Leavy-CV.pdf`} download className={`download-button ${isVisible ? 'visible' : ''}`}>
                     Download CV
                 </a>
             </div>
