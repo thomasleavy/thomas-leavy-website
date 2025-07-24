@@ -12,7 +12,9 @@ function CV() {
   src={`${process.env.PUBLIC_URL}/Thomas-Leavy-CV.pdf`}
   title="Thomas Leavy CV"
   className="cv-iframe"
+  scrolling="yes"
 ></iframe>
+
         </div>
       </section>
     );
