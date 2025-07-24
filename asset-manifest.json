@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/thomas-leavy-website/static/css/main.497a08b8.css",
-    "main.js": "/thomas-leavy-website/static/js/main.15334898.js",
+    "main.css": "/thomas-leavy-website/static/css/main.c6dbf04a.css",
+    "main.js": "/thomas-leavy-website/static/js/main.f951c57f.js",
     "static/js/453.978c7d90.chunk.js": "/thomas-leavy-website/static/js/453.978c7d90.chunk.js",
     "static/media/thumbnail.jpg": "/thomas-leavy-website/static/media/thumbnail.28d01a232a4714a2197b.jpg",
     "static/media/githubOther.png": "/thomas-leavy-website/static/media/githubOther.4db267bb8233b124c575.png",
     "static/media/whiteArrowDown.png": "/thomas-leavy-website/static/media/whiteArrowDown.9edfd30de83ab8492410.png",
     "static/media/linkedin.png": "/thomas-leavy-website/static/media/linkedin.68ac41e1459436bfd38f.png",
     "index.html": "/thomas-leavy-website/index.html",
-    "main.497a08b8.css.map": "/thomas-leavy-website/static/css/main.497a08b8.css.map",
-    "main.15334898.js.map": "/thomas-leavy-website/static/js/main.15334898.js.map",
+    "main.c6dbf04a.css.map": "/thomas-leavy-website/static/css/main.c6dbf04a.css.map",
+    "main.f951c57f.js.map": "/thomas-leavy-website/static/js/main.f951c57f.js.map",
     "453.978c7d90.chunk.js.map": "/thomas-leavy-website/static/js/453.978c7d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.497a08b8.css",
-    "static/js/main.15334898.js"
+    "static/css/main.c6dbf04a.css",
+    "static/js/main.f951c57f.js"
   ]
 }
