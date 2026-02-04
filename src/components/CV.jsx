@@ -9,7 +9,7 @@ function CV() {
     return (
       <section id="cv" className="section cv-section">
         <h1 className="cv-title">CV</h1>
-        <p className="cv-description">My professional journey and experiences.</p>
+        <p className="cv-description">My CV/Resume.</p>
         
         {/* Mobile-only full view button */}
         <div className="mobile-cv-button">
@@ -19,7 +19,7 @@ function CV() {
             style={{
               display: 'inline-block',
               padding: '0.75em 1.5em',
-              backgroundColor: '#eb2f2f',
+              backgroundColor: 'rgb(1, 157, 147)',
               color: 'white',
               textDecoration: 'none',
               borderRadius: '5px',

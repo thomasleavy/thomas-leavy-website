@@ -3,7 +3,7 @@ import './Navbar.css';
 
 function Navbar({ scrollToSection }) {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [currentSection, setCurrentSection] = useState('');
+  const [currentSection, setCurrentSection] = useState('home');
 
   useEffect(() => {
     const sections = document.querySelectorAll('section');
@@ -29,6 +29,7 @@ function Navbar({ scrollToSection }) {
   }, []);
 
   const handleLinkClick = (sectionId) => {
+    setCurrentSection(sectionId);
     scrollToSection(sectionId);
     setMenuOpen(false);
   };
@@ -47,15 +48,19 @@ function Navbar({ scrollToSection }) {
           onClick={() => setMenuOpen(false)}
         ></div>
         <div className={`navbar-links ${menuOpen ? 'show fullscreen-menu' : ''}`}>
-          {['home', 'about', 'cv', 'portfolio', 'contact'].map((section) => (
-            <button
-              key={section}
-              className={currentSection === section ? 'active-link' : ''}
-              onClick={() => handleLinkClick(section)}
-            >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </button>
-          ))}
+          {['home', 'about', 'cv', 'experience', 'qualifications', 'portfolio', 'contact'].map((section) => {
+            // Map section IDs to display names
+            const displayName = section === 'qualifications' ? 'Education' : section.charAt(0).toUpperCase() + section.slice(1);
+            return (
+              <button
+                key={section}
+                className={currentSection === section ? 'active-link' : ''}
+                onClick={() => handleLinkClick(section)}
+              >
+                {displayName}
+              </button>
+            );
+          })}
         </div>
       </div>
     </nav>

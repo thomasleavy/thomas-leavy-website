@@ -4,6 +4,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import CV from './components/CV';
+import Experience from './components/Experience';
+import Education from './components/Education';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import './components/styles/common.css';
@@ -38,6 +40,8 @@ function App() {
       <Home scrollToSection={scrollToSection} />
       <About />
       <CV />
+      <Experience />
+      <Education />
       <Portfolio />
       {/* Pass scrollToSection to Contact */}
       <Contact scrollToSection={scrollToSection} />

@@ -1,68 +1,393 @@
-
-
-/* Initial hidden state for content */
-.content {
-  opacity: 0;
-  transform: translateX(-100%); 
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out; 
+/* Override section padding for Home */
+#home.section {
+  padding: 2em 1.25em 1.5em 1.25em !important; /* Some bottom padding for spacing */
+  min-height: auto !important;
 }
 
-/* Slide-in effect for content */
+/* Main Container - Side by Side Layout */
+.home-main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 3em;
+  margin-top: 60px; /* Account for fixed navbar */
+  padding: 2em 0 1em 0; /* Some bottom padding for spacing */
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/* Left Side: Photo Carousel Wrapper */
+.photo-carousel-wrapper {
+  flex: 1;
+  min-width: 0; /* Allows flex item to shrink */
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.photo-carousel-wrapper.slide-in-left {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Right Side: Content Wrapper */
+.home-content-wrapper {
+  flex: 1;
+  min-width: 0;
+  opacity: 0;
+  transform: translateX(50px); 
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out; 
+}
+
+/* Slide-in effect for content from right */
 .fade-in-content {
   opacity: 1; 
   transform: translateX(0); 
 }
 
+/* Software Developer Badge */
+.software-developer-badge {
+  font-size: 1rem;
+  background-color: rgb(1, 157, 147);
+  border-radius: 7px;
+  color: white;
+  padding: 0.5em 1em;
+  display: inline-block;
+  margin-bottom: 1em;
+  position: relative;
+}
+
 /* Home Section Styling */
 .home-name {
-  font-size: 6vw;
+  font-size: 3rem;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   margin-top: 0.5em;
-  color: #eb2f2f;
+  margin-bottom: 0.5em;
+  color: #000000;
 }
 
 .home-info-container {
-  text-align: center;
+  text-align: left;
   padding-top: 1em;
-  margin: 0 auto;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .home-info {
-  font-size: 1.5vw;
-  line-height: 1.4;
-  color: rgb(236, 236, 236);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* Professional Photo Carousel - Left Side */
+.photo-carousel {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+  background-color: #fafaf1; /* Match global background */
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 1em;
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 0;
+}
+
+.indicator:hover {
+  transform: scale(1.2);
+}
+
+.indicator.active {
+  background-color: #ffffff;
 }
 
 /* Social Icon Container */
 .social-icons {
   display: flex;
-  gap: 1.25vw; 
-  margin-top: 5.25em; 
-  justify-content: center; 
+  gap: 1.5em; 
+  margin-top: 2em; 
+  justify-content: flex-start;
+  position: relative;
+  z-index: 10; /* Higher z-index to ensure clickability */
+}
+
+.social-icons a {
+  display: inline-block;
+  cursor: pointer;
+  pointer-events: auto; /* Ensure links are clickable */
+}
+
+.social-link {
+  position: relative;
 }
 
 .social-icon {
-  width: 3vw;
-  height: 3vw;
+  width: 2.5em;
+  height: 2.5em;
   transition: transform 0.3s ease;
+  pointer-events: auto; /* Ensure icons are clickable */
 }
 
 .social-icon:hover {
   transform: scale(1.1); 
 }
 
+/* Tooltip Styling */
+.social-link::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  padding: 0.4em 0.6em;
+  border-radius: 4px;
+  font-size: 0.75em;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  margin-bottom: 0.5em;
+}
+
+.social-link::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-2px);
+  border: 5px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.social-link:hover::after,
+.social-link:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Scroll arrow container - Centered on page */
+.scroll-arrow-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2; /* Lower than social icons */
+  pointer-events: none; /* Allow clicks to pass through except on arrow */
+}
+
+.scroll-arrow-container .scroll-image {
+  pointer-events: auto; /* Make arrow itself clickable */
+}
+
 /* Scroll image styling */
 .scroll-image {
-  margin-top: 6em;
-  margin-bottom: 1em; 
   width: 2.5em;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
+  filter: brightness(0); /* Makes the arrow black */
 }
 
 .scroll-image:hover {
   transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home-main-container {
+    flex-direction: column;
+    gap: 1.5em; /* Reduced gap */
+    padding: 1em 1em 8em 1em; /* Extra bottom padding for scroll arrow */
+  }
+
+  /* Ensure carousel appears first on mobile */
+  .photo-carousel-wrapper {
+    order: 1;
+    width: 100%;
+    flex: none; /* Override flex: 1 on mobile */
+    margin-bottom: 0.5em; /* Push content up */
+  }
+
+  .home-content-wrapper {
+    order: 2;
+    width: 100%;
+    flex: none; /* Override flex: 1 on mobile */
+    margin-top: -0.5em; /* Push content up */
+  }
+
+
+  .photo-carousel {
+    height: 45vh; /* Decreased from 50vh */
+    min-height: 350px; /* Decreased from 400px */
+    width: 100%;
+  }
+
+  .home-name {
+    font-size: 2.2rem; /* Decreased from 2.5rem */
+    text-align: center;
+    margin-top: 0.3em; /* Reduced top margin */
+    margin-bottom: 0.3em; /* Reduced bottom margin */
+  }
+
+  .home-info-container {
+    text-align: center;
+    padding-top: 0.5em; /* Reduced padding */
+  }
+
+  .home-info {
+    font-size: 0.95rem; /* Decreased font size */
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin-top: 1.5em; /* Reduced margin */
+  }
+
+  .scroll-arrow-container {
+    bottom: 1em; /* Push arrow down further */
+  }
+}
+
+@media (max-width: 768px) {
+  .home-main-container {
+    padding: 1em 1em 8em 1em; /* Extra bottom padding for scroll arrow */
+    gap: 1em; /* Reduced gap */
+  }
+
+  .photo-carousel-wrapper {
+    margin-bottom: 0.3em; /* Push content up */
+  }
+
+  .home-content-wrapper {
+    margin-top: -0.3em; /* Push content up */
+  }
+
+  .photo-carousel {
+    height: 40vh; /* Decreased from 45vh */
+    min-height: 300px; /* Decreased from 350px */
+    width: 100%;
+  }
+
+  .home-name {
+    font-size: 1.8rem; /* Decreased from 2rem */
+    margin-top: 0.2em; /* Reduced top margin */
+    margin-bottom: 0.2em; /* Reduced bottom margin */
+  }
+
+  .home-info-container {
+    padding-top: 0.3em; /* Reduced padding */
+  }
+
+  .home-info {
+    font-size: 0.9rem; /* Decreased from 1rem */
+  }
+
+  .social-icons {
+    margin-top: 1.2em; /* Reduced margin */
+  }
+
+  .scroll-arrow-container {
+    bottom: 0.5em; /* Push arrow down further */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-main-container {
+    gap: 0.8em; /* Reduced gap */
+    padding: 0.8em 0.8em 7em 0.8em; /* Extra bottom padding for scroll arrow */
+  }
+
+  .photo-carousel-wrapper {
+    margin-bottom: 0.2em; /* Push content up */
+  }
+
+  .home-content-wrapper {
+    margin-top: -0.2em; /* Push content up */
+  }
+
+  .photo-carousel {
+    height: 35vh; /* Decreased from 40vh */
+    min-height: 250px; /* Decreased from 300px */
+    width: 100%;
+  }
+
+  .home-name {
+    font-size: 1.6rem; /* Decreased from 1.75rem */
+    margin-top: 0.1em; /* Reduced top margin */
+    margin-bottom: 0.1em; /* Reduced bottom margin */
+  }
+
+  .home-info-container {
+    padding-top: 0.2em; /* Reduced padding */
+  }
+
+  .home-info {
+    font-size: 0.85rem; /* Decreased from 0.9rem */
+  }
+
+  .social-icons {
+    margin-top: 1em; /* Reduced margin */
+  }
+
+  .software-developer-badge {
+    font-size: 0.9rem;
+    margin-bottom: 0.8em; /* Reduced margin */
+  }
+
+  .scroll-arrow-container {
+    bottom: 0.3em; /* Push arrow down further */
+  }
 }

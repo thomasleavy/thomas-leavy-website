@@ -1,8 +1,14 @@
+/* Override section padding for CV */
+#cv.section {
+  padding: 1.5em 1.25em 2em 1.25em !important; /* Reduced top padding to bring closer to About */
+  min-height: auto !important;
+}
+
 .cv-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em;
+  padding: 1em 2em 2em 2em; /* Reduced top padding */
   text-align: center;
 }
 
@@ -11,14 +17,13 @@
   font-size: 3.4em;
   font-weight: bold;
   margin-bottom: 0.5em;
-  color: #eb2f2f;
+  color: #000000;
 }
 
 .cv-description {
   font-size: 1.2em;
   margin-bottom: 1em;
-  color: #555;
-  color: white;
+  color: #000000;
 }
 
 /* CV Container */
@@ -43,6 +48,14 @@
 
 /*responsive design styling*/
 @media (max-width: 1024px) {
+  #cv.section {
+    padding: 1em 1.25em 2em 1.25em !important; /* Reduced top padding on tablet */
+  }
+
+  .cv-section {
+    padding: 0.75em 2em 2em 2em; /* Reduced top padding on tablet */
+  }
+
   .cv-title {
       font-size: 1.8em;
   }
@@ -59,6 +72,14 @@
 
 /* Small Screens */
 @media (max-width: 768px) {
+  #cv.section {
+    padding: 0.75em 1.25em 1.5em 1.25em !important; /* Reduced top padding on mobile */
+  }
+
+  .cv-section {
+    padding: 0.5em 1em 1.5em 1em; /* Reduced top padding on mobile */
+  }
+
   .cv-title {
       font-size: 1.5em;
   }
@@ -111,9 +132,9 @@
 }
 
 .full-view-button:hover {
-  background-color: #d42424 !important;
+  background-color: rgb(1, 130, 120) !important;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(235, 47, 47, 0.3);
+  box-shadow: 0 4px 8px rgba(1, 157, 147, 0.3);
 }
 
 /* Show button only on mobile devices */

@@ -1,16 +1,24 @@
+/* Override section padding for About */
+#about.section {
+  padding: 5em 1.25em 1em 1.25em !important; /* Reduced bottom padding to bring CV closer */
+  min-height: auto !important;
+}
+
 /* About Section Styling */
 .about-section {
   position: relative;
-  padding: 2em;
+  padding: 4.5em 2em 2em 2em; /* One more increase in top padding */
   display: flex;
   flex-direction: column;
   align-items: center; 
   overflow: hidden;
   text-align: center;
+  min-height: auto !important; /* Override the 100vh from .section */
+  margin-top: 0; /* No negative margin - allow natural spacing */
 }
 
 .profile-image {
-  margin-top: 2em;
+  margin-top: 0.5em; /* Reduced top margin */
   width: 300px;
   height: 300px;
   border-radius: 50%; 
@@ -29,11 +37,13 @@
 
 /* About Content Container */
 .about-content {
-  max-width: 600px; 
+  max-width: 700px; 
   margin: 0 auto;
+  margin-left: 35%; /* More space for the circular image on the left */
   transform: translateX(100%); 
   opacity: 0;
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out; 
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  text-align: left; /* Left-align content */
 }
 
 .about-content.visible {
@@ -41,58 +51,149 @@
   opacity: 1;
 }
 
-/* About Title Styling */
-.about-title {
-  padding-top: 1.2em;
-  font-size: 3.5em;
+/* About Subsection Styling */
+.about-subsection {
+  margin-bottom: 1.5em; /* Increased vertical spacing for better readability */
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  text-align: left; /* Left-align subsections */
+}
+
+.about-content.visible .about-subsection {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-content.visible .about-subsection:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.about-content.visible .about-subsection:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.about-content.visible .about-subsection:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.about-content.visible .about-subsection:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+/* Subsection Header */
+.subsection-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.6em;
+}
+
+.subsection-icon {
+  font-size: 1.2em; /* Smaller icon */
+  display: inline-block;
+}
+
+.subsection-title {
+  font-size: 1.1em; /* Smaller bold text */
   font-weight: bold;
   margin: 0;
-  color: #eb2f2f;
+  color: #000000;
 }
 
-/* About Description Styling */
-.about-description {
-  font-size: 1.5em;
+/* Subsection Text */
+.subsection-text {
+  font-size: 0.95em; /* Smaller placeholder text */
   line-height: 1.6;
-  color: white;
-  margin-top: 0;
-  padding-bottom: 2em;
-  opacity: 0; /* hidden initially */
-  transform: translateX(100%); /*start off screen on the right*/
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out; 
+  color: #000000;
+  margin: 0;
+  padding-left: 1.7em; /* Align text with icon (icon width ~1.2em + gap ~0.5em) */
+  white-space: nowrap; /* Keep text on one line */
 }
 
-.about-description.visible {
-  transform: translateX(0); 
-  opacity: 1; 
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #about.section {
+    padding: 4em 1.25em 1em 1.25em !important; /* Reduced bottom padding on tablet */
+  }
+
+  .about-section {
+    padding: 3.5em 2em 1em 2em; /* Reduced bottom padding on tablet */
+    margin-top: 0;
+  }
+
+  .about-content {
+    margin-left: 30%;
+  }
+
+  .subsection-title {
+    font-size: 1.2em; /* Slightly increased for tablet */
+  }
+
+  .subsection-text {
+    font-size: 1em; /* Slightly increased for tablet */
+  }
+
+  .subsection-icon {
+    font-size: 1.25em; /* Slightly increased for tablet */
+  }
 }
 
-/* Download Button Styling */
-.download-button {
-  position: relative;
-  display: inline-block;
-  padding: 0.75em 1.5em;
-  margin-top: 1.5em;
-  font-size: 1em;
-  font-weight: bold;
-  color: #fff;
-  background-color: #eb2f2f;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease-out;
-  overflow: hidden;
-  opacity: 0; 
-  transform: translateY(100%); 
+@media (max-width: 768px) {
+  #about.section {
+    padding: 3.5em 1.25em 1em 1.25em !important; /* Reduced bottom padding on mobile */
+  }
+
+  .about-section {
+    text-align: left;
+    padding: 3.5em 1em 1em 1em; /* Reduced bottom padding on mobile */
+    margin-top: 0;
+  }
+
+  .profile-image {
+    position: relative;
+    left: auto;
+    transform: translateX(0);
+    margin: 0 auto 1em auto; /* Reduced margin on mobile */
+  }
+
+  .about-content {
+    margin-left: 0;
+    max-width: 100%;
+    padding-left: 1em; /* Push text slightly to the right */
+  }
+
+  .subsection-title {
+    font-size: 1.3em; /* Increased from 1.1em */
+  }
+
+  .subsection-text {
+    font-size: 1.05em; /* Increased from 0.95em */
+    padding-left: 1.7em; /* Keep alignment with icon */
+    white-space: normal; /* Allow wrapping on mobile */
+  }
+
+  .subsection-icon {
+    font-size: 1.3em; /* Increased from 1.2em */
+  }
 }
 
-.download-button.visible {
-  opacity: 1;
-  transform: translateY(0); /* Slide to position */
-}
+@media (max-width: 480px) {
+  .about-content {
+    padding-left: 1.5em; /* Push text further to the right on smaller screens */
+  }
 
-/* Glow Effect on Hover */
-.download-button:hover {
-  background-color: #eb4646; 
-  box-shadow: 0 0 15px 5px #e75d5d;
+  .subsection-title {
+    font-size: 1.25em; /* Increased from 1.2em */
+  }
+
+  .subsection-text {
+    font-size: 1.05em; /* Increased from 1em */
+    padding-left: 1.7em; /* Keep alignment with icon */
+  }
+
+  .subsection-icon {
+    font-size: 1.3em; /* Increased from 1.2em */
+  }
 }
 

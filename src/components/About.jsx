@@ -38,13 +38,49 @@ function About() {
         <section id="about" ref={aboutRef} className="section about-section">
             <img src={thumbnail} alt="Profile" className={`profile-image ${isVisible ? 'visible' : ''}`} />
             <div className={`about-content ${isVisible ? 'visible' : ''}`}>
-                <h2 className={`about-title ${isVisible ? 'visible' : ''}`}>About Me</h2>
-                <p className={`about-description ${isVisible ? 'visible' : ''}`}>
-                    Hello, my name is Thomas Leavy. I am a hardworking, flexible and resilient software engineer and primary school teacher based in Limerick, Ireland. My CV, portfolio and contact information are available below. For more enquiries, please email thomasleavy1@outlook.com.
-                </p>
-                <a href={`${process.env.PUBLIC_URL}/Thomas-Leavy-CV.pdf`} download className={`download-button ${isVisible ? 'visible' : ''}`}>
-                    Download CV
-                </a>
+                {/* What I'm Looking For */}
+                <div className="about-subsection">
+                    <div className="subsection-header">
+                        <span className="subsection-icon">❓</span>
+                        <h3 className="subsection-title">What I'm Looking For</h3>
+                    </div>
+                    <p className="subsection-text">
+                        Graduate software roles, junior roles, networking, collaboration, and mentorship opportunities
+                    </p>
+                </div>
+
+                {/* Developing via */}
+                <div className="about-subsection">
+                    <div className="subsection-header">
+                        <span className="subsection-icon">💻</span>
+                        <h3 className="subsection-title">Developing via</h3>
+                    </div>
+                    <p className="subsection-text">
+                        Remote • Hybrid • On-site
+                    </p>
+                </div>
+
+                {/* Location */}
+                <div className="about-subsection">
+                    <div className="subsection-header">
+                        <span className="subsection-icon">📍</span>
+                        <h3 className="subsection-title">Location</h3>
+                    </div>
+                    <p className="subsection-text">
+                        Based in Limerick, Ireland
+                    </p>
+                </div>
+
+                {/* Languages */}
+                <div className="about-subsection">
+                    <div className="subsection-header">
+                        <span className="subsection-icon">🌐</span>
+                        <h3 className="subsection-title">Languages</h3>
+                    </div>
+                    <p className="subsection-text">
+                        English: <strong>Native</strong> | Irish: <strong>Professional</strong> | German: <strong>Working</strong>
+                    </p>
+                </div>
             </div>
         </section>
     );

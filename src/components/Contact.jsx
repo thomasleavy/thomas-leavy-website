@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './Contact.css';
-import whiteArrowDown from '../assets/whiteArrowDown.png';
+import arrowDown from '../assets/arrowDown.png';
 import linkedinLogo from '../assets/linkedin.png';
 import githubLogo from '../assets/github.png';
 import githubOther from '../assets/githubOther.png';
@@ -48,17 +48,17 @@ function Contact({ scrollToSection }) {
         {/*Social icons */}
 
         <div className="social-icons">
-          <a href="https://www.linkedin.com/in/thomasleavy" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/thomasleavy" target="_blank" rel="noopener noreferrer" className="social-link" data-tooltip="https://www.linkedin.com/in/thomasleavy">
             <img src={linkedinLogo} alt="LinkedIn" className="social-icon" />
           </a>
-          <a href="https://github.com/thomasleavy" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/thomasleavy" target="_blank" rel="noopener noreferrer" className="social-link" data-tooltip="https://github.com/thomasleavy">
             <img src={githubOther} alt="GitHub" className="social-icon" />
           </a>
         </div>
 
         {/* Scroll to Home Button */}
         <img
-          src={whiteArrowDown}
+          src={arrowDown}
           alt="Scroll up"
           className="scroll-up-image"
           onClick={() => scrollToSection('home')}
