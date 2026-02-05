@@ -29,7 +29,7 @@
   color: #000000;
 }
 
-/* CV Content Container - Side by Side Layout */
+/* CV Content Container - Center Aligned on Large Screens */
 .cv-content {
   max-width: 1200px;
   width: 100%;
@@ -38,6 +38,7 @@
   flex-direction: row;
   gap: 3em;
   align-items: center;
+  justify-content: center;
 }
 
 /* Left Container - CV Preview */
