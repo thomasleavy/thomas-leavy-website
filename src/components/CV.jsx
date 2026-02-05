@@ -37,7 +37,7 @@ function CV() {
     return (
       <section id="cv" ref={cvRef} className="section cv-section">
         <h1 className="cv-title">CV</h1>
-        <p className="cv-description">My CV/Resume.</p>
+        <p className="cv-description">My CV/Resume</p>
         
         <div className="cv-content">
           {/* Left: CV Preview Container */}
@@ -63,11 +63,8 @@ function CV() {
             <div className="iframe-overlay"></div>
           </a>
 
-          {/* Right: Text and Button */}
+          {/* Right: Button */}
           <div className={`cv-content-right ${isVisible ? 'slide-in-right' : ''}`}>
-            <p className="cv-info-text">
-              Click the preview on the left or the button below to view and download my full CV.
-            </p>
             <a 
               href={pdfUrl}
               target="_blank"
