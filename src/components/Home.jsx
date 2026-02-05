@@ -1,6 +1,6 @@
 //you can use rafce to generate a template if necessary
 // Home.jsx
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import linkedinLogo from '../assets/linkedin.png';
 import githubLogo from '../assets/github.png';
 import arrowDown from '../assets/arrowDown.png';
@@ -15,6 +15,7 @@ function Home({ scrollToSection }) {
   const [fadeIn, setFadeIn] = useState(false);
   const [carouselSlideIn, setCarouselSlideIn] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const carouselIntervalRef = useRef(null);
 
   // Professional photos in order
   const professionalPhotos = [
@@ -34,14 +35,35 @@ function Home({ scrollToSection }) {
     }; // Cleanup timers on unmount
   }, []);
 
-  useEffect(() => {
-    // Auto-rotate carousel every 4 seconds
-    const carouselTimer = setInterval(() => {
+  // Function to start/reset the carousel interval
+  const startCarouselInterval = () => {
+    // Clear any existing interval
+    if (carouselIntervalRef.current) {
+      clearInterval(carouselIntervalRef.current);
+    }
+    
+    // Start new interval
+    carouselIntervalRef.current = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % professionalPhotos.length);
-    }, 4000);
+    }, 3000);
+  };
 
-    return () => clearInterval(carouselTimer); // Cleanup on unmount
+  useEffect(() => {
+    // Auto-rotate carousel every 3 seconds
+    startCarouselInterval();
+
+    return () => {
+      if (carouselIntervalRef.current) {
+        clearInterval(carouselIntervalRef.current);
+      }
+    }; // Cleanup on unmount
   }, [professionalPhotos.length]);
+
+  // Handle indicator click - reset timer
+  const handleIndicatorClick = (index) => {
+    setCurrentImageIndex(index);
+    startCarouselInterval(); // Reset the 3-second timer
+  };
 
   return (
     <section id="home" className="section">
@@ -68,7 +90,7 @@ function Home({ scrollToSection }) {
               <button
                 key={index}
                 className={`indicator ${index === currentImageIndex ? 'active' : ''}`}
-                onClick={() => setCurrentImageIndex(index)}
+                onClick={() => handleIndicatorClick(index)}
                 aria-label={`Go to photo ${index + 1}`}
               />
             ))}
