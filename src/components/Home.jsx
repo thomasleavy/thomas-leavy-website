@@ -1,6 +1,6 @@
 //you can use rafce to generate a template if necessary
 // Home.jsx
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import linkedinLogo from '../assets/linkedin.png';
 import githubLogo from '../assets/github.png';
 import arrowDown from '../assets/arrowDown.png';
@@ -36,7 +36,7 @@ function Home({ scrollToSection }) {
   }, []);
 
   // Function to start/reset the carousel interval
-  const startCarouselInterval = () => {
+  const startCarouselInterval = useCallback(() => {
     // Clear any existing interval
     if (carouselIntervalRef.current) {
       clearInterval(carouselIntervalRef.current);
@@ -46,7 +46,7 @@ function Home({ scrollToSection }) {
     carouselIntervalRef.current = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % professionalPhotos.length);
     }, 3000);
-  };
+  }, [professionalPhotos.length]);
 
   useEffect(() => {
     // Auto-rotate carousel every 3 seconds
@@ -57,7 +57,7 @@ function Home({ scrollToSection }) {
         clearInterval(carouselIntervalRef.current);
       }
     }; // Cleanup on unmount
-  }, [professionalPhotos.length]);
+  }, [startCarouselInterval]);
 
   // Handle indicator click - reset timer
   const handleIndicatorClick = (index) => {
