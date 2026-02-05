@@ -46,7 +46,7 @@
   width: 140px;
   min-width: 140px;
   height: 105px;
-  background-color: #f5f5f5;
+  background-color: #fafaf1; /* Match section background */
   border: 1px solid #ddd;
   border-radius: 8px;
   position: relative;
@@ -80,6 +80,7 @@
   display: block;
   transition: transform 0.4s ease, opacity 0.8s ease-in-out;
   opacity: 0;
+  background-color: #fafaf1; /* Match section background in case image doesn't cover */
 }
 
 /* Carousel image styling */
