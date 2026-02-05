@@ -1,15 +1,18 @@
 /* Override section padding for CV */
 #cv.section {
-  padding: 1.5em 1.25em 2em 1.25em !important; /* Reduced top padding to bring closer to About */
+  padding: 1.5em 1.25em 2em 1.25em !important;
   min-height: auto !important;
 }
 
 .cv-section {
+  position: relative;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em 2em 2em 2em; /* Reduced top padding */
   text-align: center;
+  background-color: #fafaf1;
+  min-height: auto !important;
 }
 
 /* Title Styling */
@@ -26,19 +29,140 @@
   color: #000000;
 }
 
-/* CV Button Container */
-.cv-button-container {
+/* CV Content Container - Side by Side Layout */
+.cv-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  gap: 3em;
   align-items: center;
-  margin-top: 1em;
+}
+
+/* Left Container - CV Preview */
+.cv-container-left {
+  width: 140px;
+  min-width: 140px;
+  height: 105px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.cv-container-left.slide-in-left {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.cv-link-container.slide-in-left:hover {
+  transform: translateX(0) translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 20px rgba(1, 157, 147, 0.4);
+  border-color: rgb(1, 157, 147);
+}
+
+.cv-preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.cv-link-container.slide-in-left:hover .cv-preview-image {
+  transform: scale(1.1);
+}
+
+.cv-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  color: #666;
+  text-align: center;
+  border: 2px dashed #ccc;
+}
+
+.cv-placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+.cv-placeholder-icon {
+  font-size: 2em;
+  opacity: 0.7;
+}
+
+.cv-placeholder-text {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #555;
+}
+
+.cv-placeholder-hint {
+  font-size: 0.7em;
+  color: #999;
+  font-style: italic;
+}
+
+.iframe-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.cv-link-container.slide-in-left:hover .iframe-overlay {
+  background-color: rgba(1, 157, 147, 0.2);
+}
+
+/* Right Content */
+.cv-content-right {
+  flex: 1;
+  text-align: left;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.cv-content-right.slide-in-right {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.cv-info-text {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #000000;
+  margin: 0 0 1.5em 0;
 }
 
 /* CV Download Button */
 .cv-download-button {
   display: inline-block;
-  padding: 1em 2em;
-  font-size: 1.2em;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
   font-weight: bold;
   color: #fff;
   background-color: rgb(1, 157, 147);
@@ -62,7 +186,7 @@
   }
 
   .cv-section {
-    padding: 0.75em 2em 2em 2em;
+    padding: 1.5em 2em 2em 2em;
   }
 
   .cv-title {
@@ -73,9 +197,23 @@
     font-size: 1.1em;
   }
 
+  .cv-content {
+    gap: 2em;
+  }
+
+  .cv-container-left {
+    width: 120px;
+    min-width: 120px;
+    height: 90px;
+  }
+
+  .cv-info-text {
+    font-size: 0.95em;
+  }
+
   .cv-download-button {
-    font-size: 1.1em;
-    padding: 0.9em 1.8em;
+    font-size: 0.95em;
+    padding: 0.7em 1.3em;
   }
 }
 
@@ -85,7 +223,7 @@
   }
 
   .cv-section {
-    padding: 0.5em 1em 1.5em 1em;
+    padding: 1em 1em 1.5em 1em;
   }
 
   .cv-title {
@@ -97,9 +235,30 @@
     margin-bottom: 1.5em;
   }
 
+  /* Stack container above content on mobile */
+  .cv-content {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
+  .cv-container-left {
+    width: 100%;
+    min-width: auto;
+    height: 200px;
+  }
+
+  .cv-content-right {
+    text-align: center;
+  }
+
+  .cv-info-text {
+    text-align: center;
+    font-size: 0.95em;
+  }
+
   .cv-download-button {
     font-size: 1em;
-    padding: 0.85em 1.6em;
+    padding: 0.75em 1.5em;
   }
 }
 
@@ -110,11 +269,18 @@
 
   .cv-description {
     font-size: 0.95em;
-    margin-bottom: 1.5em;
+  }
+
+  .cv-container-left {
+    height: 150px;
+  }
+
+  .cv-info-text {
+    font-size: 0.9em;
   }
 
   .cv-download-button {
     font-size: 0.95em;
-    padding: 0.75em 1.4em;
+    padding: 0.7em 1.3em;
   }
 }
