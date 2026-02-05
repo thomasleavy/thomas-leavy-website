@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Education.css';
 import ncirlImage from '../assets/ncirl-image.png';
 import ncirlImage2 from '../assets/ncirl-image-2.png';
+import hiberniaImage from '../assets/hibernia-image.png';
 import ulImage from '../assets/ul-image.png';
 import ulImage2 from '../assets/ul-image-2.png';
 import ulImage3 from '../assets/ul-image-3.png';
@@ -108,11 +109,10 @@ function Education() {
             rel="noopener noreferrer"
             className={`education-container-left education-link-container ${isVisible ? 'slide-in-left' : ''}`}
           >
-            <iframe
-              src="https://hiberniacollege.com/"
-              title="Hibernia College Website"
-              className="education-iframe"
-              allowFullScreen
+            <img 
+              src={hiberniaImage} 
+              alt="Hibernia College Website"
+              className="education-preview-image"
             />
             <div className="iframe-overlay"></div>
           </a>
