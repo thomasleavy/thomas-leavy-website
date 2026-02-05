@@ -69,15 +69,29 @@
 }
 
 .cv-preview-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.8s ease-in-out;
+  opacity: 0;
 }
 
-.cv-link-container.slide-in-left:hover .cv-preview-image {
+/* Carousel image styling */
+.cv-preview-image:not(.active) {
+  opacity: 0; /* Hide inactive images */
+}
+
+.cv-preview-image.active {
+  opacity: 1; /* Show active image */
+  z-index: 1;
+}
+
+.cv-link-container.slide-in-left:hover .cv-preview-image.active {
   transform: scale(1.1);
 }
 

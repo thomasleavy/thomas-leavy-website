@@ -1,12 +1,21 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './CV.css';
-// TODO: Add your CV preview screenshot to src/assets as cv-preview.png, then uncomment the line below
-// import cvPreviewImage from '../assets/cv-preview.png';
+import cvImage1 from '../assets/cv-image-1.png';
+import cvImage2 from '../assets/cv-image-2.png';
+import cvImage3 from '../assets/cv-image-3.png';
 
 function CV() {
     const [isVisible, setIsVisible] = useState(false);
+    const [cvImageIndex, setCvImageIndex] = useState(0);
     const cvRef = useRef(null);
     const pdfUrl = `${process.env.PUBLIC_URL}/Thomas-Leavy-CV.pdf`;
+
+    // CV images array
+    const cvImages = [
+        cvImage1,
+        cvImage2,
+        cvImage3
+    ];
 
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -34,6 +43,17 @@ function CV() {
         };
       }, []);
 
+    // Rotate CV images every 3 seconds
+    useEffect(() => {
+        if (isVisible) {
+            const carouselTimer = setInterval(() => {
+                setCvImageIndex((prevIndex) => (prevIndex + 1) % cvImages.length);
+            }, 3000);
+
+            return () => clearInterval(carouselTimer);
+        }
+    }, [isVisible, cvImages.length]);
+
     return (
       <section id="cv" ref={cvRef} className="section cv-section">
         <h1 className="cv-title">CV</h1>
@@ -47,19 +67,14 @@ function CV() {
             rel="noopener noreferrer"
             className={`cv-container-left cv-link-container ${isVisible ? 'slide-in-left' : ''}`}
           >
-            {/* Uncomment below and comment out the placeholder when you add cv-preview.png to src/assets */}
-            {/* <img 
-              src={cvPreviewImage} 
-              alt="CV Preview"
-              className="cv-preview-image"
-            /> */}
-            <div className="cv-placeholder">
-              <div className="cv-placeholder-content">
-                <span className="cv-placeholder-icon">📄</span>
-                <span className="cv-placeholder-text">CV Preview</span>
-                <span className="cv-placeholder-hint">Add cv-preview.png to assets</span>
-              </div>
-            </div>
+            {cvImages.map((image, index) => (
+              <img
+                key={index}
+                src={image}
+                alt={`CV Preview ${index + 1}`}
+                className={`cv-preview-image ${index === cvImageIndex ? 'active' : ''}`}
+              />
+            ))}
             <div className="iframe-overlay"></div>
           </a>
 
