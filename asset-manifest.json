@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/thomas-leavy-website/static/css/main.877a69b1.css",
-    "main.js": "/thomas-leavy-website/static/js/main.3be6681e.js",
+    "main.js": "/thomas-leavy-website/static/js/main.e1f911a8.js",
     "static/js/453.978c7d90.chunk.js": "/thomas-leavy-website/static/js/453.978c7d90.chunk.js",
     "static/media/carousel-photo-1.JPG": "/thomas-leavy-website/static/media/carousel-photo-1.88e37fd3cdcf5bdb0830.JPG",
     "static/media/carousel-photo-2.JPG": "/thomas-leavy-website/static/media/carousel-photo-2.864de5f5a13145744c2b.JPG",
+    "static/media/hibernia-image.png": "/thomas-leavy-website/static/media/hibernia-image.9e73e6fe3f439fdb6783.png",
     "static/media/ncirl-image.png": "/thomas-leavy-website/static/media/ncirl-image.145cff09a4d161d6772e.png",
     "static/media/ul-image-3.png": "/thomas-leavy-website/static/media/ul-image-3.8e26c5d5c0a271f69736.png",
     "static/media/ncirl-image-2.png": "/thomas-leavy-website/static/media/ncirl-image-2.0eb03dcc2365229943dc.png",
@@ -21,11 +22,11 @@
     "static/media/linkedin.png": "/thomas-leavy-website/static/media/linkedin.68ac41e1459436bfd38f.png",
     "index.html": "/thomas-leavy-website/index.html",
     "main.877a69b1.css.map": "/thomas-leavy-website/static/css/main.877a69b1.css.map",
-    "main.3be6681e.js.map": "/thomas-leavy-website/static/js/main.3be6681e.js.map",
+    "main.e1f911a8.js.map": "/thomas-leavy-website/static/js/main.e1f911a8.js.map",
     "453.978c7d90.chunk.js.map": "/thomas-leavy-website/static/js/453.978c7d90.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.877a69b1.css",
-    "static/js/main.3be6681e.js"
+    "static/js/main.e1f911a8.js"
   ]
 }
