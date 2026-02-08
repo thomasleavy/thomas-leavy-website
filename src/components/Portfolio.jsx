@@ -1,9 +1,22 @@
 //you can use rafce to generate a template if necessary
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
+import civicfixImage1 from '../assets/civicfix-image-1.png';
+import civicfixImage2 from '../assets/civicfix-image-2.png';
+import civicfixImage3 from '../assets/civicfix-image-3.png';
 
 function Portfolio() {
+    const [civicfixImageIndex, setCivicfixImageIndex] = useState(0);
+    const civicfixImages = [civicfixImage1, civicfixImage2, civicfixImage3];
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCivicfixImageIndex((prev) => (prev + 1) % civicfixImages.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, [civicfixImages.length]);
+
     return (
       <section id="portfolio" className="section portfolio-section">
         <h1 className="portfolio-title">Portfolio</h1>
@@ -12,6 +25,28 @@ function Portfolio() {
          {/*Portoflio grid card*/}
 
          <div className="portfolio-grid">
+        <a
+          href="https://github.com/thomasleavy/civic-fix"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-item portfolio-item-with-carousel"
+        >
+          <div className="portfolio-carousel-container">
+            {civicfixImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`CivicFix ${index + 1}`}
+                className={`portfolio-carousel-image ${index === civicfixImageIndex ? 'active' : ''}`}
+              />
+            ))}
+          </div>
+          <h1 className="project-title">CivicFix</h1>
+          <div className="portfolio-hover">
+            <p>A prototype app that lets users report issues and suggestions in their local area to their local government. An exercise in direct democracy, civic participation and voice.</p>
+          </div>
+        </a>
+
         <a
           href="https://github.com/thomasleavy/eLearningApplication"
           target="_blank"

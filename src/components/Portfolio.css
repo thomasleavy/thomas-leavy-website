@@ -78,6 +78,38 @@
   border-color: rgb(230, 120, 0);
 }
 
+/* CivicFix card with rotating images */
+.portfolio-item-with-carousel {
+  position: relative;
+}
+
+.portfolio-carousel-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.portfolio-carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.portfolio-carousel-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
 /* Effect when hovered on larger screens only */
 @media (min-width: 769px) {
   .portfolio-item:hover {
