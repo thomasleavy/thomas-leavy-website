@@ -2,7 +2,6 @@
 // Home.jsx
 import React, { useEffect, useState, useRef, useCallback } from 'react';
 import linkedinLogo from '../assets/linkedin.png';
-import githubLogo from '../assets/github.png';
 import arrowDown from '../assets/arrowDown.png';
 import githubOther from '../assets/githubOther.png';
 import carouselPhoto1 from '../assets/carousel-photo-1.JPG';
@@ -78,7 +77,7 @@ function Home({ scrollToSection }) {
               >
                 <img 
                   src={photo} 
-                  alt={`Professional photo ${index + 1}`}
+                  alt={`Professional headshot ${index + 1}`}
                   className="carousel-photo"
                 />
               </div>

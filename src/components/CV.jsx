@@ -32,13 +32,14 @@ function CV() {
           }
         );
       
-        if (cvRef.current) {
-          observer.observe(cvRef.current);
+        const node = cvRef.current;
+        if (node) {
+          observer.observe(node);
         }
       
         return () => {
-          if (cvRef.current) {
-            observer.unobserve(cvRef.current);
+          if (node) {
+            observer.unobserve(node);
           }
         };
       }, []);

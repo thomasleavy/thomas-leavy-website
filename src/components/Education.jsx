@@ -41,13 +41,14 @@ function Education() {
       }
     );
   
-    if (educationRef.current) {
-      observer.observe(educationRef.current);
+    const node = educationRef.current;
+    if (node) {
+      observer.observe(node);
     }
   
     return () => {
-      if (educationRef.current) {
-        observer.unobserve(educationRef.current);
+      if (node) {
+        observer.unobserve(node);
       }
     };
   }, []);
