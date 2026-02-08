@@ -5,10 +5,14 @@ import './Portfolio.css';
 import civicfixImage1 from '../assets/civicfix-image-1.png';
 import civicfixImage2 from '../assets/civicfix-image-2.png';
 import civicfixImage3 from '../assets/civicfix-image-3.png';
+import primaryPalsImage1 from '../assets/primary-pals-image-1.png';
+import primaryPalsImage2 from '../assets/primary-pals-image-2.png';
 
 function Portfolio() {
     const [civicfixImageIndex, setCivicfixImageIndex] = useState(0);
+    const [primaryPalsImageIndex, setPrimaryPalsImageIndex] = useState(0);
     const civicfixImages = [civicfixImage1, civicfixImage2, civicfixImage3];
+    const primaryPalsImages = [primaryPalsImage1, primaryPalsImage2];
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -16,6 +20,13 @@ function Portfolio() {
         }, 3000);
         return () => clearInterval(timer);
     }, [civicfixImages.length]);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setPrimaryPalsImageIndex((prev) => (prev + 1) % primaryPalsImages.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, [primaryPalsImages.length]);
 
     return (
       <section id="portfolio" className="section portfolio-section">
@@ -51,8 +62,18 @@ function Portfolio() {
           href="https://github.com/thomasleavy/eLearningApplication"
           target="_blank"
           rel="noopener noreferrer"
-          className="portfolio-item"
+          className="portfolio-item portfolio-item-with-carousel"
         >
+          <div className="portfolio-carousel-container">
+            {primaryPalsImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Primary pals e-Learning ${index + 1}`}
+                className={`portfolio-carousel-image ${index === primaryPalsImageIndex ? 'active' : ''}`}
+              />
+            ))}
+          </div>
           <h1 className="project-title">Primary pals e-Learning Platform</h1>
           <div className="portfolio-hover">
             <p>Full-stack e-learning application for primary school pupils and teachers, built with React, Java, Spring Boot, BCrypt, PostgreSQL, pgAdmin 4 and Maven.</p>
