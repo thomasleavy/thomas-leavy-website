@@ -7,12 +7,17 @@ import civicfixImage2 from '../assets/civicfix-image-2.png';
 import civicfixImage3 from '../assets/civicfix-image-3.png';
 import primaryPalsImage1 from '../assets/primary-pals-image-1.png';
 import primaryPalsImage2 from '../assets/primary-pals-image-2.png';
+import homePilotImage1 from '../assets/home-pilot-1.png';
+import homePilotImage2 from '../assets/home-pilot-2.png';
+import homePilotImage3 from '../assets/home-pilot-3.png';
 
 function Portfolio() {
     const [civicfixImageIndex, setCivicfixImageIndex] = useState(0);
     const [primaryPalsImageIndex, setPrimaryPalsImageIndex] = useState(0);
+    const [homePilotImageIndex, setHomePilotImageIndex] = useState(0);
     const civicfixImages = [civicfixImage1, civicfixImage2, civicfixImage3];
     const primaryPalsImages = [primaryPalsImage1, primaryPalsImage2];
+    const homePilotImages = [homePilotImage1, homePilotImage2, homePilotImage3];
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -27,6 +32,13 @@ function Portfolio() {
         }, 3000);
         return () => clearInterval(timer);
     }, [primaryPalsImages.length]);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setHomePilotImageIndex((prev) => (prev + 1) % homePilotImages.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, [homePilotImages.length]);
 
     return (
       <section id="portfolio" className="section portfolio-section">
@@ -55,6 +67,28 @@ function Portfolio() {
           <h1 className="project-title">CivicFix</h1>
           <div className="portfolio-hover">
             <p>A prototype app that lets users report issues and suggestions in their local area to their local government. An exercise in direct democracy, civic participation and voice.</p>
+          </div>
+        </a>
+
+        <a
+          href="https://github.com/thomasleavy/home-pilot"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-item portfolio-item-with-carousel"
+        >
+          <div className="portfolio-carousel-container">
+            {homePilotImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Home Pilot ${index + 1}`}
+                className={`portfolio-carousel-image ${index === homePilotImageIndex ? 'active' : ''}`}
+              />
+            ))}
+          </div>
+          <h1 className="project-title">Home Pilot</h1>
+          <div className="portfolio-hover">
+            <p>One dashboard for thermostat, hot water, lights and sensors. Angular, Node.js, MQTT, WebSocket and Eclipse Mosquitto; local broker and optional device simulator.</p>
           </div>
         </a>
 
