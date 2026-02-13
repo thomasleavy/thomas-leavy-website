@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/thomas-leavy-website/static/css/main.35339561.css",
-    "main.js": "/thomas-leavy-website/static/js/main.37ba3fb5.js",
+    "main.js": "/thomas-leavy-website/static/js/main.6d28e52b.js",
     "static/js/453.978c7d90.chunk.js": "/thomas-leavy-website/static/js/453.978c7d90.chunk.js",
     "static/media/carousel-photo-1.JPG": "/thomas-leavy-website/static/media/carousel-photo-1.88e37fd3cdcf5bdb0830.JPG",
     "static/media/carousel-photo-2.JPG": "/thomas-leavy-website/static/media/carousel-photo-2.864de5f5a13145744c2b.JPG",
@@ -12,6 +12,7 @@
     "static/media/civicfix-image-1.png": "/thomas-leavy-website/static/media/civicfix-image-1.48f7155c8c21f6fce6db.png",
     "static/media/ul-image.png": "/thomas-leavy-website/static/media/ul-image.682ff1087d61b646329a.png",
     "static/media/leavys-shoes-image.png": "/thomas-leavy-website/static/media/leavys-shoes-image.033adde5b08c46c641f3.png",
+    "static/media/home-pilot-1.png": "/thomas-leavy-website/static/media/home-pilot-1.dc930501f72c4c9baddc.png",
     "static/media/carousel-photo-3.JPG": "/thomas-leavy-website/static/media/carousel-photo-3.e428899d639d115c4d1c.JPG",
     "static/media/Leavys-image-2.png": "/thomas-leavy-website/static/media/Leavys-image-2.770c403236dc882d1c20.png",
     "static/media/Leavys-image-3.png": "/thomas-leavy-website/static/media/Leavys-image-3.f82c87aef6ccfb1f623b.png",
@@ -25,16 +26,18 @@
     "static/media/carousel-image-4.jpg": "/thomas-leavy-website/static/media/carousel-image-4.aa672861b54e27d896f7.jpg",
     "static/media/civicfix-image-3.png": "/thomas-leavy-website/static/media/civicfix-image-3.d3a54ee214cfd38d103b.png",
     "static/media/thumbnail.jpg": "/thomas-leavy-website/static/media/thumbnail.28d01a232a4714a2197b.jpg",
+    "static/media/home-pilot-2.png": "/thomas-leavy-website/static/media/home-pilot-2.1d49ad448f32ebe940a5.png",
+    "static/media/home-pilot-3.png": "/thomas-leavy-website/static/media/home-pilot-3.5543f52e6df228be8a49.png",
     "static/media/primary-pals-image-1.png": "/thomas-leavy-website/static/media/primary-pals-image-1.1c38e58e79a48704e925.png",
     "static/media/githubOther.png": "/thomas-leavy-website/static/media/githubOther.4db267bb8233b124c575.png",
     "static/media/linkedin.png": "/thomas-leavy-website/static/media/linkedin.68ac41e1459436bfd38f.png",
     "index.html": "/thomas-leavy-website/index.html",
     "main.35339561.css.map": "/thomas-leavy-website/static/css/main.35339561.css.map",
-    "main.37ba3fb5.js.map": "/thomas-leavy-website/static/js/main.37ba3fb5.js.map",
+    "main.6d28e52b.js.map": "/thomas-leavy-website/static/js/main.6d28e52b.js.map",
     "453.978c7d90.chunk.js.map": "/thomas-leavy-website/static/js/453.978c7d90.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35339561.css",
-    "static/js/main.37ba3fb5.js"
+    "static/js/main.6d28e52b.js"
   ]
 }
