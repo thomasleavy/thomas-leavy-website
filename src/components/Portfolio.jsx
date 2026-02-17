@@ -2,6 +2,11 @@
 
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
+import lineageImage1 from '../assets/lineage-image-1.png';
+import lineageImage2 from '../assets/lineage-image-2.png';
+import lineageImage3 from '../assets/lineage-image-3.png';
+import lineageImage4 from '../assets/lineage-image-4.png';
+import lineageImage5 from '../assets/lineage-image-5.png';
 import civicfixImage1 from '../assets/civicfix-image-1.png';
 import civicfixImage2 from '../assets/civicfix-image-2.png';
 import civicfixImage3 from '../assets/civicfix-image-3.png';
@@ -12,12 +17,21 @@ import homePilotImage2 from '../assets/home-pilot-2.png';
 import homePilotImage3 from '../assets/home-pilot-3.png';
 
 function Portfolio() {
+    const [lineageImageIndex, setLineageImageIndex] = useState(0);
     const [civicfixImageIndex, setCivicfixImageIndex] = useState(0);
     const [primaryPalsImageIndex, setPrimaryPalsImageIndex] = useState(0);
     const [homePilotImageIndex, setHomePilotImageIndex] = useState(0);
+    const lineageImages = [lineageImage1, lineageImage2, lineageImage3, lineageImage4, lineageImage5];
     const civicfixImages = [civicfixImage1, civicfixImage2, civicfixImage3];
     const primaryPalsImages = [primaryPalsImage1, primaryPalsImage2];
     const homePilotImages = [homePilotImage1, homePilotImage2, homePilotImage3];
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setLineageImageIndex((prev) => (prev + 1) % lineageImages.length);
+        }, 3000);
+        return () => clearInterval(timer);
+    }, [lineageImages.length]);
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -48,6 +62,28 @@ function Portfolio() {
          {/*Portoflio grid card*/}
 
          <div className="portfolio-grid">
+        <a
+          href="https://github.com/thomasleavy/lineage"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="portfolio-item portfolio-item-with-carousel"
+        >
+          <div className="portfolio-carousel-container">
+            {lineageImages.map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                alt={`Lineage ${index + 1}`}
+                className={`portfolio-carousel-image ${index === lineageImageIndex ? 'active' : ''}`}
+              />
+            ))}
+          </div>
+          <h1 className="project-title">Lineage</h1>
+          <div className="portfolio-hover">
+            <p>Lineage is a garment archive and lookbook that is useful for organising/showcasing fashion work - built with Next.js.</p>
+          </div>
+        </a>
+
         <a
           href="https://github.com/thomasleavy/civic-fix"
           target="_blank"
@@ -111,205 +147,6 @@ function Portfolio() {
           <h1 className="project-title">Primary pals e-Learning Platform</h1>
           <div className="portfolio-hover">
             <p>Full-stack e-learning application for primary school pupils and teachers, built with React, Java, Spring Boot, BCrypt, PostgreSQL, pgAdmin 4 and Maven.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/carbon-coach"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Carbon Coach</h1>
-          <div className="portfolio-hover">
-            <p>Personal climate-impact tracker. Technologies
-            include React, Typescript, API routes, PostgreSQL and Vercel.</p>
-          </div>
-        </a>
-        
-        <a
-          href="https://github.com/thomasleavy/goTutorials"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Go Tutorials</h1>
-          <div className="portfolio-hover">
-            <p>A selection of Golang tutorials I created.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/peer-to-peer-chat-application"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Peer-to-Peer Chat Application</h1>
-          <div className="portfolio-hover">
-            <p>Built using Node.js with various installations.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/gRPC-Chat-Application"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">gRPC Chat Application</h1>
-          <div className="portfolio-hover">
-            <p>Includes bi-directional streaming and server/client interaction.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/barbershop-booking-app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Java Barbershop Booking Application</h1>
-          <div className="portfolio-hover">
-            <p>Using JavaFX and Java app development.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/Weather-App"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">React API Weather Application</h1>
-          <div className="portfolio-hover">
-            <p>
-              Built with React framework, TailwindCSS and powered by OpenWeatherMap API and Getform.io.
-            </p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/nasa-api"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">NASA API Photo of the Day</h1>
-          <div className="portfolio-hover">
-            <p>Built with React framework and includes a PDF download option.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/MQTT-Heating-System"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">MQTT Heating System</h1>
-          <div className="portfolio-hover">
-            <p>
-              An MQTT-based heating system allowing remote control, monitoring, and message-oriented management.
-            </p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/JavaDataStructuresAndAlgorithms"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Java Data Structures and Algorithms Examples</h1>
-          <div className="portfolio-hover">
-            <p>
-              Implementations of DSA, i.e. ArrayQueue, Lists, Stacks, Sorts, Searches, Recursion, etc.
-            </p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/theRecipeRoom"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Recipe Website</h1>
-          <div className="portfolio-hover">
-            <p>HTML, CSS, JavaScript, PHP, XAMPP and Bootstrap.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/chat-application"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Chat Application</h1>
-          <div className="portfolio-hover">
-            <p>Real-time chat app built with Node.js and Socket.io.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/React-To-Do-List"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">React To-Do List</h1>
-          <div className="portfolio-hover">
-            <p>Simple but intuitive to-do list built with React.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/simpleImageMosaic"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Image Mosaic Concept</h1>
-          <div className="portfolio-hover">
-            <p>Image mosaic concept.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/BrickBreaker"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Java Brick Breaker Game</h1>
-          <div className="portfolio-hover">
-            <p>A simple Java brick breaker game built with Java and various imports.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/ultimateRockPaperScissors"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Rock Paper Scissors Website</h1>
-          <div className="portfolio-hover">
-            <p>Built with HTML, CSS and JavaScript.</p>
-          </div>
-        </a>
-
-        <a
-          href="https://github.com/thomasleavy/simpleTextAdventure"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="portfolio-item"
-        >
-          <h1 className="project-title">Java Text-Based Adventure</h1>
-          <div className="portfolio-hover">
-            <p>Built using Java and various imports.</p>
           </div>
         </a>
       </div>

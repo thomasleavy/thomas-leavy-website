@@ -31,17 +31,17 @@
   color: #000000;
 }
 
-/* Portfolio grid */
+/* Portfolio grid - 2 columns, 4 cards = 2 rows */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5em;
   width: 100%;
   max-width: 1200px;
   padding: 1em;
 }
 
-/* Portfolio items */
+/* Portfolio items - larger cards for 2-per-row layout */
 .portfolio-item {
   position: relative;
   background-color: #f5f5f5;
@@ -49,7 +49,7 @@
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-  min-height: 200px;
+  min-height: 320px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
   display: flex;
@@ -203,19 +203,25 @@
     padding: 0.5em 1em 0.5em 1em;
   }
 
+  /* Single column on small screens */
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item {
+    min-height: 280px;
+    transform: none;
+    box-shadow: none;
+  }
+
   .portfolio-hover {
-    opacity: 1; 
-    pointer-events: auto; 
+    opacity: 1;
+    pointer-events: auto;
     background-color: transparent;
   }
 
   .project-title {
-    opacity: 1; 
-  }
-
-  .portfolio-item {
-    transform: none; 
-    box-shadow: none;
+    opacity: 1;
   }
 }
 
