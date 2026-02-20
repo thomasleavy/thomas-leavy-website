@@ -102,7 +102,7 @@ function Home({ scrollToSection }) {
           <p className="home-name">Thomas Leavy</p>
           <div className="home-info-container">
             <p className="home-info">
-              <strong>Driven</strong>, <strong>resilient</strong> software developer with hands-on <strong>experience</strong> building <strong>dynamic</strong> applications. Bringing a <strong>professional</strong> background in education into tech, with strong <strong>collaboration</strong>, <strong>communication</strong>, and <strong>problem-solving</strong> skills. Seeking <strong>opportunities</strong> to contribute to <strong>meaningful</strong> products and <strong>grow</strong> in collaborative teams.
+              I am a <strong>software developer</strong> based in <strong>Limerick</strong>, <strong>Ireland</strong> with hands-on experience building and maintaining web applications in <strong>structured</strong>, <strong>collaborative</strong> development environments. I have a <strong>strong</strong> <strong>technical</strong> foundation and a professional <strong>background</strong> in <strong>education</strong>, contributing clear communication, organisation, and problem-solving skills across technical and <strong>operational</strong> contexts. I am seeking a <strong>graduate role</strong> where I can <strong>contribute</strong> to well-designed systems, continue <strong>enhancing</strong> my development capabilities, and <strong>grow</strong> in a teamwork-oriented organisation.
             </p>
           </div>
 
