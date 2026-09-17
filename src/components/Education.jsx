@@ -77,7 +77,32 @@ function Education() {
       <p className="education-description">My educational background.</p>
       
       <div className="education-content">
-        {/* Education Item 1 */}
+        {/* Education Item 1 - UL MSc */}
+        <div className="education-item">
+          <a 
+            href="https://www.ul.ie/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={`education-container-left education-link-container ul-carousel-container ${isVisible ? 'slide-in-left' : ''}`}
+          >
+            {ulImages.map((image, index) => (
+              <img 
+                key={index}
+                src={image} 
+                alt={`University of Limerick ${index + 1}`}
+                className={`education-preview-image ul-carousel-image ${index === ulImageIndex ? 'active' : ''}`}
+              />
+            ))}
+            <div className="iframe-overlay"></div>
+          </a>
+          <div className={`education-content-right ${isVisible ? 'slide-in-right' : ''}`}>
+            <h3 className="education-institution-title">University of Limerick</h3>
+            <p className="education-subtitle">Master of Science in Software Engineering</p>
+            <p className="education-dates">2026 - Present</p>
+          </div>
+        </div>
+
+        {/* Education Item 2 - NCI */}
         <div className="education-item">
           <a 
             href="https://www.ncirl.ie/" 
@@ -102,7 +127,7 @@ function Education() {
           </div>
         </div>
 
-        {/* Education Item 2 */}
+        {/* Education Item 3 - Hibernia */}
         <div className="education-item">
           <a 
             href="https://hiberniacollege.com/" 
@@ -124,7 +149,7 @@ function Education() {
           </div>
         </div>
 
-        {/* Education Item 3 */}
+        {/* Education Item 4 - UL BA */}
         <div className="education-item">
           <a 
             href="https://www.ul.ie/" 
