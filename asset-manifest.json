@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/thomas-leavy-website/static/css/main.2887d536.css",
-    "main.js": "/thomas-leavy-website/static/js/main.c578e719.js",
+    "main.css": "/thomas-leavy-website/static/css/main.96d7723a.css",
+    "main.js": "/thomas-leavy-website/static/js/main.aa032494.js",
     "static/js/453.978c7d90.chunk.js": "/thomas-leavy-website/static/js/453.978c7d90.chunk.js",
     "static/media/carousel-photo-1.JPG": "/thomas-leavy-website/static/media/carousel-photo-1.88e37fd3cdcf5bdb0830.JPG",
     "static/media/carousel-photo-2.JPG": "/thomas-leavy-website/static/media/carousel-photo-2.864de5f5a13145744c2b.JPG",
@@ -37,12 +37,12 @@
     "static/media/githubOther.png": "/thomas-leavy-website/static/media/githubOther.4db267bb8233b124c575.png",
     "static/media/linkedin.png": "/thomas-leavy-website/static/media/linkedin.68ac41e1459436bfd38f.png",
     "index.html": "/thomas-leavy-website/index.html",
-    "main.2887d536.css.map": "/thomas-leavy-website/static/css/main.2887d536.css.map",
-    "main.c578e719.js.map": "/thomas-leavy-website/static/js/main.c578e719.js.map",
+    "main.96d7723a.css.map": "/thomas-leavy-website/static/css/main.96d7723a.css.map",
+    "main.aa032494.js.map": "/thomas-leavy-website/static/js/main.aa032494.js.map",
     "453.978c7d90.chunk.js.map": "/thomas-leavy-website/static/js/453.978c7d90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2887d536.css",
-    "static/js/main.c578e719.js"
+    "static/css/main.96d7723a.css",
+    "static/js/main.aa032494.js"
   ]
 }
