@@ -1,13 +1,13 @@
 .App {
   text-align: center;
   background-color: #fffbf5 !important;
-  background: #fffbf5 !important;
+  background-image: linear-gradient(#fffbf5, #fffbf5) !important;
   min-height: 100%;
 }
 
 #root {
   background-color: #fffbf5 !important;
-  background: #fffbf5 !important;
+  background-image: linear-gradient(#fffbf5, #fffbf5) !important;
   min-height: 100%;
 }
 

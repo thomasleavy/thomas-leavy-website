@@ -11,12 +11,14 @@
     <meta name="color-scheme" content="light" />
     <meta name="supported-color-schemes" content="light" />
     <style>
-      /* Opt out of Android/Samsung Chrome Auto Dark Mode as early as possible */
+      /* Beat Android/Firefox Auto Dark as early as possible */
       :root, html, body {
-        color-scheme: only light;
+        color-scheme: only light !important;
         background-color: #fffbf5 !important;
-        background: #fffbf5 !important;
+        background-image: linear-gradient(#fffbf5, #fffbf5) !important;
         color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+        forced-color-adjust: none !important;
       }
     </style>
     <meta
