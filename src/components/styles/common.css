@@ -6,14 +6,17 @@
 }
 
 :root {
-  --site-bg: #fffbf5; /* Cream — same on all viewports */
-  color-scheme: light only;
+  --site-bg: #fffbf5; /* Cream — same on all viewports / OS themes */
+  --site-text: #000000;
+  color-scheme: only light; /* Correct syntax: opts out of UA Auto Dark Mode */
 }
 
 /* Global Background for Body */
 html {
+  color-scheme: only light;
   background-color: var(--site-bg) !important;
   background: var(--site-bg) !important;
+  color: var(--site-text) !important;
 }
 
 html, body {
@@ -23,13 +26,13 @@ html, body {
   min-height: 100%;
   height: 100%;
   overflow-x: hidden; /*stop horizontal scroll*/
+  color-scheme: only light;
   background-color: var(--site-bg) !important;
   background: var(--site-bg) !important;
-  color: #000000;
+  color: var(--site-text) !important;
   font-family: 'Raleway', 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  color-scheme: light only;
 }
 
 /* Section styles — solid cream so mobile never shows a different base colour */
@@ -42,6 +45,7 @@ html, body {
   text-align: center;
   background-color: var(--site-bg) !important;
   background: var(--site-bg) !important;
+  color: var(--site-text) !important;
   min-height: 100vh; 
   width: 100%;
   box-sizing: border-box;
@@ -56,29 +60,89 @@ html, body {
 }
 
 /* Text Colors */
-h1, h2, h3, p, a {
-  color: #000000;
+h1, h2, h3, p, a, button, span, label, li {
+  color: var(--site-text);
+}
+
+/* Keep cream even when the phone OS / Chrome prefers dark (Samsung Auto Dark) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: only light;
+  }
+
+  html,
+  body,
+  #root,
+  .App,
+  .section,
+  .navbar,
+  .fullscreen-menu,
+  .hamburger-overlay,
+  .about-section,
+  .contact-section,
+  .home-section,
+  .cv-section,
+  .experience-section,
+  .education-section,
+  .portfolio-section {
+    color-scheme: only light;
+    background-color: var(--site-bg) !important;
+    background: var(--site-bg) !important;
+    color: var(--site-text) !important;
+  }
+
+  h1, h2, h3, p, a, button, span, label, li,
+  .home-name,
+  .home-info,
+  .navbar-links button,
+  .hamburger-button,
+  .fullscreen-menu button,
+  .subsection-title,
+  .subsection-text,
+  .education-institution-title,
+  .education-subtitle,
+  .education-dates,
+  .experience-institution-title,
+  .experience-subtitle,
+  .experience-dates,
+  .cv-title,
+  .cv-description,
+  .portfolio-title,
+  .portfolio-description,
+  .contact-title,
+  .contact-description {
+    color: var(--site-text) !important;
+  }
 }
 
 /* Keep cream on every mobile / landscape viewport */
 @media (max-width: 1024px) {
-  html, body, #root, .App, .section {
+  html, body, #root, .App, .section, .navbar, .fullscreen-menu {
     background-color: var(--site-bg) !important;
     background: var(--site-bg) !important;
+    color: var(--site-text) !important;
   }
 }
 
 @media (max-width: 768px) {
-  html, body, #root, .App, .section {
+  html, body, #root, .App, .section, .navbar, .fullscreen-menu {
     background-color: var(--site-bg) !important;
     background: var(--site-bg) !important;
+    color: var(--site-text) !important;
+  }
+
+  .hamburger-button,
+  .navbar-links button,
+  .fullscreen-menu button {
+    color: var(--site-text) !important;
   }
 }
 
 @media (max-width: 480px) {
-  html, body, #root, .App, .section {
+  html, body, #root, .App, .section, .navbar, .fullscreen-menu {
     background-color: var(--site-bg) !important;
     background: var(--site-bg) !important;
+    color: var(--site-text) !important;
   }
 }
 
@@ -92,5 +156,6 @@ h1, h2, h3, p, a {
     overflow-x: hidden;
     background-color: var(--site-bg) !important;
     background: var(--site-bg) !important;
+    color: var(--site-text) !important;
   }
 }
