@@ -10,6 +10,8 @@
   align-items: center;
   padding: 1em 2em 2em 2em; /* Reduced top padding */
   text-align: center;
+  background-color: #fffbf5 !important;
+  background: #fffbf5 !important;
 }
 
 /* Scroll Up Image Styling */

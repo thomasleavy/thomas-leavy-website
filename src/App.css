@@ -1,10 +1,14 @@
 .App {
   text-align: center;
-  background-color: #fffbf5; /* Clean cream background */
+  background-color: #fffbf5 !important;
+  background: #fffbf5 !important;
+  min-height: 100%;
 }
 
 #root {
-  background-color: #fffbf5;
+  background-color: #fffbf5 !important;
+  background: #fffbf5 !important;
+  min-height: 100%;
 }
 
 .App-logo {
