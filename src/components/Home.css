@@ -88,7 +88,7 @@
   height: 60vh;
   min-height: 400px;
   overflow: hidden;
-  background-color: #fafaf1; /* Match global background */
+  background-color: #fffbf5; /* Match global cream background */
 }
 
 .carousel-image {
